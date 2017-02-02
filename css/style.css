@@ -306,3 +306,12 @@ html {
         flex: 1 1 auto;
     }
 }
+
+.invert
+{
+        filter: invert(0);
+        -webkit-filter: invert(0);
+        -moz-filter: invert(0);
+        -o-filter: invert(0);
+        -ms-filter: invert(0);
+}
