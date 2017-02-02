@@ -1,55 +1,165 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Vertigéo</title>
-    <link rel="stylesheet" href="/includes/bootstrap-3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/style.css">
-  </head>
-  <body>
-    <div class="container-fluid">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <p>Une association étudiante à vocation professionnelle au service de l'information géographique. Nous avons ce qu'il vous faut !</p>
-          </div>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Vertigéo</title>
+        <link rel="stylesheet" href="/fonts/lobster/lobster.css">
+        <link rel="stylesheet" href="/fonts/tangerine/tangerine.css">
+        <link rel="stylesheet" href="/includes/bootstrap-3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+
+    <body data-spy="scroll" data-target=".navbar-fixed-top" data-offset="40">
+        <div id="background"></div>
+
+        <nav class="navbar navbar-default navbar-fixed-top ">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#starterContainterFluid">Vertigéo</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#competencesContainterFluid">Nos compétences</a></li>
+                        <li><a href="#servicesContainterFluid">Nos services</a></li>
+                        <li><a href="#contactContainterFluid">Contact</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a target="_blank" href="https://fr.linkedin.com/in/vertigéo-ensg-0bb45126">LinkedIn</a></li>
+                        <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100008796610594&fref=ts">FaceBook</a></li>
+                        <li><a target="_blank" href="https://github.com/Tofull/Website_Vertigeo">Github</a></li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </nav>
+
+
+        <div class="container-fluid" id="starterContainterFluid">
+            <div class="container" id="starterContainter">
+                <div class="row">
+                    <div class="jumbotron">
+                        <div class="container">
+                            <div class="col-md-10 col-md-offset-1">
+                                <img src="/img/utilisables/logo.png" alt="Logo Vertigeo" height="200px" class="img-responsive center-block" />
+                                <h3 class="text-center">l'association étudiante à vocation professionnelle au service de </h3>
+                                <h1 class="tangerine display-2 text-center">l'information géographique</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      
-        <div class="row">
-          <div class="col-md-3">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </div>
-          <div class="col-md-9">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <div class="container-fluid space"></div>
+        <div class="container-fluid no-padding" id="competencesContainterFluid">
+            <div class="row row-eq-height">
+                <div class="col-md-4">
+                    <img src="/img/utilisables/leve.jpg" alt="leve au tacheometre. Topographie" width="100%" height="auto" class="img-responsive" />
+                </div>
+                <div class="col-md-8">
+                    <div class="row form-group">
+                        <div class="col-md-offset-3 col-md-6">
+                            <div id="Carousel" class="carousel slide">
+                                <ol class="carousel-indicators">
+                                    <li data-target="Carousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="Carousel" data-slide-to="1"></li>
+                                    <li data-target="Carousel" data-slide-to="2"></li>
+                                    <li data-target="Carousel" data-slide-to="3"></li>
+                                </ol>
 
-          </div>
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <img src="/img/utilisables/topometrie.jpg">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h3>topometrie</h3>
+                                            <p>topometrie</p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <img src="/img/utilisables/photogrammetrie.jpg">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h3>photogrammetrie</h3>
+                                            <p>photogrammetrie</p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <img src="/img/utilisables/informatique.jpg">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h3>informatique</h3>
+                                            <p>informatique</p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <img src="/img/utilisables/cartographie.jpg">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h3>cartographie</h3>
+                                            <p>cartographie</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <a class="left carousel-control" href="#Carousel" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left"></span>
+                                </a>
+                                <a class="right carousel-control" href="#Carousel" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+
+                        <div class="col-md-offset-2 col-md-8">
+                            <p class="text-center">Les étudiants et étudiantes que nous recrutons sont en formation à l'École Nationale des Sciences Géographiques. Ces études leur permet d'acquérir rapidement des compétences dans l'univers du numérique et de l'information géographique.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-
-    <div class="container-fluid">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </div>
-          <div class="col-md-3">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </div>
-          <div class="col-md-3">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </div>
-          <div class="col-md-3">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </div>
-
+        <div class="container-fluid space"></div>
+        <div class="container-fluid" id="servicesContainterFluid">
+            <div class="container">
+                <div class="row row-eq-height">
+                    <div class="col-md-3">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                    <div class="col-md-3">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                    <div class="col-md-3">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                    <div class="col-md-3">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="container-fluid space"></div>
+        <div class="container-fluid" id="contactContainterFluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="/includes/jquery-3.1.1/jquery-3.1.1.js"></script>
+        <script type="text/javascript" src="/includes/bootstrap-3.3.7/js/bootstrap.js"></script>
+        <script type="text/javascript" src="/js/script.js"></script>
+    </body>
 
-      </div>
-
-    </div>
-    <script type="text/javascript" src="/includes/jquery-3.1.1/js/jquery-3.1.1.js"></script>
-    <script type="text/javascript" src="/includes/bootstrap-3.3.7/js/bootstrap.js"></script>
-    <script type="text/javascript" src="/js/script.js"></script>
-  </body>
 </html>
