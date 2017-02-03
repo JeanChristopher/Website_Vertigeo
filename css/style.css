@@ -110,7 +110,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: 0;
     opacity: 0.5;
     background-position: 50% 0;
     -ms-background-size: cover;
@@ -120,29 +120,6 @@
     background-size: cover;
 }
 
-#contactContainterFluid {
-    position: relative;
-    min-height: 600px;
-}
-
-#contactContainterFluid:before {
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0.5;
-    background-color: rgba(0, 0, 255, 0.5);
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
-}
 
 .space {
     min-height: 200px;
@@ -156,6 +133,7 @@ body {
 .lobster {
     font-family: Lobster, monospace;
 }
+
 
 .tangerine {
     font-family: Tangerine, monospace;
@@ -271,6 +249,14 @@ html {
     height: 100%;
 }
 
+.full-width {
+    width: 100%;
+}
+
+.full-height {
+    height: 100%;
+}
+
 .flex-col {
     display: flex;
     display: -webkit-flex;
@@ -315,3 +301,13 @@ html {
         -o-filter: invert(0);
         -ms-filter: invert(0);
 }
+
+.bg-outer {
+  background: linear-gradient(to right, rgba(107, 111, 255, 0.42) 0%, rgba(44, 0, 200, 0.75) 100%);
+}
+
+.devTools {
+  background-color : rgb(250, 255, 8);
+}
+
+#mapid { height: 400px; }
