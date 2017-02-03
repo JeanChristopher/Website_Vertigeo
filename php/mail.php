@@ -32,8 +32,8 @@
 		//==========
 
 		//=====Création du header de l'e-mail.
-		$headers = "From: \"Vertigeo Website\"<vertigeo@ensg.eu>".$passage_ligne;
-		$headers.= "Reply-to: \"Vertigeo Website\" <vertigeo@ensg.eu>".$passage_ligne;
+		$headers = "From: \"Vertigeo Website\"<no-reply-vertigeo@ensg.eu>".$passage_ligne;
+		$headers.= "Reply-to: \"".ucwords(strtolower($name))."\" <".$email.">".$passage_ligne;
 		$headers.= "MIME-Version: 1.0".$passage_ligne;
 		$headers.= "Content-Type: multipart/alternative;".$passage_ligne." boundary=\"$boundary\"".$passage_ligne;
 		//==========
