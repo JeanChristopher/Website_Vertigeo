@@ -311,3 +311,7 @@ html {
 }
 
 #mapid { height: 400px; }
+
+#game_2048Container {
+  height:400px;
+}

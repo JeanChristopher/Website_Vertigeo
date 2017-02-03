@@ -1,11 +1,12 @@
-<!-- <?php
+<?php
 	if (isset($_POST["submit"])) {
+		echo "success";
 		$name = $_POST['name'];
 		$email = $_POST['email'];
 		$message = $_POST['message'];
 		$human = intval($_POST['human']);
-		$from = 'Demo Contact Form';
-		$to = 'example@domain.com';
+		$from = 'example@domain.com';
+		$to = 'loic.messal@ensg.eu';
 		$subject = 'Message from Contact Demo ';
 
 		$body ="From: $name\n E-Mail: $email\n Message:\n $message";
@@ -36,21 +37,21 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
 	}
 }
 	}
-?> -->
 
+?>
 <?php
-//Execution des calculs selon la requete envoyée
-if (isset($_POST["requete"]))
-{
-	if ($_POST["requete"]=="calculMontant")
-	{
-        $array = json_decode($_POST["compteur"],true); //true pour decoder un tableau associatif
-		$montant=calculeMontant($array);
-
-        //Retour (encodage des donnees)
-		echo json_encode($montant);
-	}
-}
+// //Execution des calculs selon la requete envoyée
+// if (isset($_POST["requete"]))
+// {
+// 	if ($_POST["requete"]=="calculMontant")
+// 	{
+//         $array = json_decode($_POST["compteur"],true); //true pour decoder un tableau associatif
+// 		$montant=calculeMontant($array);
+//
+//         //Retour (encodage des donnees)
+// 		echo json_encode($montant);
+// 	}
+// }
 
 
 ?>

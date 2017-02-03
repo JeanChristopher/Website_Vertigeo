@@ -50,7 +50,7 @@ if(phpversion() >= 5.4) {
           <ul class="nav navbar-nav">
             <li><a href="#competencesSection">Nos compétences</a></li>
             <li><a href="#serviceContainterFluidJumbotron">Nos services</a></li>
-            <li><a href="#contactContainterFluid">Contact</a></li>
+            <li><a href="#contactContainterFluidJumbotron">Contact</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a target="_blank" href="https://fr.linkedin.com/in/vertigéo-ensg-0bb45126">LinkedIn</a></li>
@@ -218,7 +218,7 @@ if(phpversion() >= 5.4) {
     </div>
     <div class="space"></div>
 
-    <div class="jumbotron transparent no-padding-vertical no-margin-vertical">
+    <div class="jumbotron transparent no-padding-vertical no-margin-vertical" id="contactContainterFluidJumbotron">
       <h2 class="lobster">Nous contacter</h2>
       <div class="container-fluid bg-outer" id="contactContainterFluid">
         <div class="container">
@@ -227,43 +227,38 @@ if(phpversion() >= 5.4) {
 
               <div class="container  margin-shifted-vertical">
                 <h3>Envoyez-nous un message : </h3>
-                <form class="form-horizontal" role="form" method="post" action="php/mail.php">
+                <form id="form_mail" class="form-horizontal" role="form">
                   <div class="input-group full-width">
                     <label for="name" class="col-sm-2 control-label">Nom</label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" id="name" name="name" placeholder="Prénom Nom" value="<?php echo htmlspecialchars($_POST['name']); ?>">
-                      <?php echo "<p class=\"text-danger\">$errName</p>";?>
+                      <input type="text" class="form-control" id="name" name="name" placeholder="Prénom Nom">
                     </div>
                   </div>
                   <div class="input-group full-width">
                     <label for="email" class="col-sm-2 control-label">Email</label>
                     <div class="col-sm-10">
-                      <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="<?php echo htmlspecialchars($_POST['email']); ?>">
-                      <?php echo "<p class=\"text-danger\">$errEmail</p>";?>
+                      <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com">
                     </div>
                   </div>
                   <div class="input-group full-width">
                     <label for="message" class="col-sm-2 control-label">Message</label>
                     <div class="col-sm-10">
-                      <textarea class="form-control" rows="4" name="message" placeholder="Je réfléchis à un projet de SIG web depuis longtemps. J'aimerai le confier à un étudiant en géomatique. J'ai alors pensé à vous. J'aimerai vous rencontrer pour en discuter. Quand êtes-vous disponible ?"><?php //echo htmlspecialchars($_POST['message']);?></textarea>
-                      <?php echo "<p class=\"text-danger\">$errMessage</p>";?>
+                      <textarea id="message" class="form-control" rows="4" name="message" placeholder="Je réfléchis à un projet de SIG web depuis longtemps. J'aimerai le confier à un étudiant en géomatique. J'ai alors pensé à vous. J'aimerai vous rencontrer pour en discuter. Quand êtes-vous disponible ?"></textarea>
                     </div>
                   </div>
                   <div class="input-group full-width margin-shifted-vertical">
                     <label for="human" class="col-sm-2 control-label">2 + 3 = </label>
                     <div class="col-sm-10">
                       <input type="text" class="form-control" id="human" name="human" placeholder="?">
-                      <?php echo "<p class=\"text-danger\">$errHuman</p>";?>
                     </div>
                   </div>
                   <div class="input-group full-width margin-shifted-vertical">
                     <div class="col-sm-10 col-sm-offset-2 ">
-                      <button id="submit" name="submit" type="button" class="btn btn-primary">Envoyer</button>
+                      <input id="submit" type="submit" value="Envoyer" class="btn btn-primary">
                     </div>
                   </div>
                   <div class="form-group full-width">
                     <div class="col-sm-10 col-sm-offset-2">
-                      <?php echo $result; ?>
                     </div>
                   </div>
                 </form>
@@ -271,9 +266,20 @@ if(phpversion() >= 5.4) {
 
             </div>
           </div>
+
           <div class="row">
             <div class="col-md-8 col-md-offset-2 ">
-              <h3>Où nous trouver ?</h3>
+              <h3>Détendez-vous le temps que nous vous répondons : </h3>
+              <div class="container">
+                <div class="col-md-8 col-md-offset-2" id="game_2048Container">
+                  <iframe src="/includes/game_2048/2048_bis.html" scrolling="no" frameborder="0" style="border: 0; top:0; left:0; right:0; bottom:0; width:100%; height:100%;"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 ">
+              <h3>Vous êtes les bienvenus :</h3>
               <div class="container">
                 <div class="col-md-10 col-md-offset-2">
 
@@ -281,13 +287,6 @@ if(phpversion() >= 5.4) {
                 </div>
 
               </div>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-              in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </div>
           </div>
         </div>
