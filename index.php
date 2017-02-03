@@ -231,7 +231,7 @@ if(phpversion() >= 5.4) {
 
               <div class="container  margin-shifted-vertical">
                 <h3>Envoyez-nous un message : </h3>
-                <form id="form_mail" class="form-horizontal" role="form">
+                <form id="form_mail" class="form-horizontal" role="form" accept-charset="UTF-8">
                   <div class="input-group full-width">
                     <label for="name" class="col-sm-2 control-label">Nom</label>
                     <div class="col-sm-10">

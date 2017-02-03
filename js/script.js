@@ -12,9 +12,9 @@ $('.carousel').carousel({
 });
 
 
-function getConfiguration(config, callback) {
+function getConfiguration(callback) {
     // do a bunch of stuff
-    if (!checkConfigurationLoaded(config)) {
+    if (!checkConfigurationLoaded()) {
         // call the callback to notify other code
         setTimeout(getConfiguration, 1000);
     }
@@ -24,8 +24,11 @@ function getConfiguration(config, callback) {
 }
 
 
-function checkConfigurationLoaded(config) {
-    return config.loaded;
+function checkConfigurationLoaded() {
+  if (config.loaded === undefined){
+    return false;
+  }
+  return config.loaded;
 }
 
 
