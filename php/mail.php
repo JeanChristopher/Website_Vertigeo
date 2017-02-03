@@ -68,7 +68,7 @@
 		}
 		//=====Déclaration des messages au format texte et au format HTML.
 		$message_txt = "Salut à tous, voici un e-mail envoyé par un script PHP.";
-		$message_html = "<html><head></head><body><b>Salut à tous</b>, voici un e-mail envoyé par un <i>script PHP</i>.</body></html>";
+		$message_html = "<html><head></head><body>".$message."</body></html>";
 		//==========
 
 		//=====Création de la boundary
@@ -80,8 +80,8 @@
 		//=========
 
 		//=====Création du header de l'e-mail.
-		$headers = "From: \"Vertigéo\"<vertigeo@ensg.eu>".$passage_ligne;
-		$headers.= "Reply-to: \"Vertigéo\" <vertigeo@ensg.eu>".$passage_ligne;
+		$headers = "From: \"Vertigeo Website\"<vertigeo@ensg.eu>".$passage_ligne;
+		$headers.= "Reply-to: \"Vertigeo Website\" <vertigeo@ensg.eu>".$passage_ligne;
 		$headers.= "MIME-Version: 1.0".$passage_ligne;
 		$headers.= "Content-Type: multipart/alternative;".$passage_ligne." boundary=\"$boundary\"".$passage_ligne;
 		//==========
@@ -91,13 +91,13 @@
 		//=====Ajout du message au format texte.
 		$body.= "Content-Type: text/plain; charset=\"utf-8\"".$passage_ligne;
 		$body.= "Content-Transfer-Encoding: 8bit".$passage_ligne;
-		$body.= $passage_ligne.$message_txt.$passage_ligne;
+		$body.= $passage_ligne.$message.$passage_ligne;
 		//==========
 		$body.= $passage_ligne."--".$boundary.$passage_ligne;
 		//=====Ajout du message au format HTML
 		$body.= "Content-Type: text/html; charset=\"utf-8\"".$passage_ligne;
 		$body.= "Content-Transfer-Encoding: 8bit".$passage_ligne;
-		$body.= $passage_ligne.$message_html.$passage_ligne;
+		$body.= $passage_ligne.nl2br($message).$passage_ligne;
 		//==========
 		$body.= $passage_ligne."--".$boundary."--".$passage_ligne;
 		$body.= $passage_ligne."--".$boundary."--".$passage_ligne;
