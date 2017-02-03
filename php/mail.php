@@ -13,51 +13,10 @@
 		$to = 'loic.messal@ensg.eu';
 		$subject = '[Vertigeo] Contact site internet';
 
-		// //=====Création du header de l'e-mail.
-		// $boundary = "-----=".md5(rand());
-		//
-		// $headers = "From: \"".htmlspecialchars("Vertigeo")."\" <vertigeo@ensg.eu>\r\n";
-		// $headers.= "Reply-to: \"".htmlspecialchars("Vertigeo")."\" vertigeo@ensg.eu>\r\n";
-		// $headers.= "MIME-Version: 1.0\r\n";
-		// $headers.= "charset=\"UTF-8\";Content-Transfer-Encoding: 8bit;\r\n";
-		// $headers.= "Content-Type: multipart/alternative;boundary=\"$boundary\"\r\n";
-		//
-		//
-		// //==========
-		//
-		// //=====Déclaration des messages au format texte et au format HTML.
-		//
-		// //=====Création du message.
-		// $body  = "\r\n--".$boundary."\r\n";
-		// //=====Ajout du message au format texte.
-		// $body .= "Content-Type: text/plain; charset=\"UTF-8\" \r\n";
-		// $body .= "Content-Transfer-Encoding: 8bit\r\n";
-		// $body .= "\r\nMessage de ".$name." \r\n";
-		// $body .= "\r\nEnvoyé depuis le formulaire de contact du site de Vertigeo\r\n";
-		// $body .= "\r\nAdresse mail de l'auteur : ".$email." \r\n";
-		// $body .= "\r\nTexte du message : \r\n";
-		// $body .= "\r\n======== \r\n";
-		// $body .= "\r\n ".$message." \r\n";
-		// $body .= "\r\n======== \r\n";
-		// $body .= "\r\nEnvoyé le ".date("d/m/Y - H:i")."\r\n";
-		// //==========
-		// $body .= "\r\n--".$boundary."\r\n";
-		// //=====Ajout du message au format HTML
-		// $body .= "Content-Type: text/html; charset=\"UTF-8\"\r\n";
-		// $body .= "Content-Transfer-Encoding: 8bit\r\n";
-		// $body .= "\r\nMessage de ".$name." \r\n";
-		// $body .= "\r\nEnvoyé depuis le formulaire de contact du site de Vertigeo\r\n";
-		// $body .= "\r\nAdresse mail de l'auteur : ".$email." \r\n";
-		// $body .= "\r\nTexte du message : \r\n";
-		// $body .= "\r\n======== \r\n";
-		// $body .= "\r\n ".html_entity_decode($message)." \r\n";
-		// $body .= "\r\n======== \r\n";
-		// $body .= "\r\nEnvoyé le ".date("d/m/Y - H:i")."\r\n";
-		// $body .= "\r\n--".$boundary."--\r\n";
-		// $body .= "\r\n--".$boundary."--\r\n";
 
 
-		$adresseMail = 'weaponsb@mail.fr'; // Déclaration de l'adresse de destination.
+
+		$adresseMail = 'detection_passage_ligne@mail.fr'; // Déclaration de l'adresse de destination.
 		if (!preg_match("#^[a-z0-9._-]+@(hotmail|live|msn).[a-z]{2,4}$#", $adresseMail)) // On filtre les serveurs qui rencontrent des bogues.
 		{
 			$passage_ligne = "\r\n";
@@ -66,18 +25,11 @@
 		{
 			$passage_ligne = "\n";
 		}
-		//=====Déclaration des messages au format texte et au format HTML.
-		$message_txt = "Salut à tous, voici un e-mail envoyé par un script PHP.";
-		$message_html = "<html><head></head><body>".$message."</body></html>";
-		//==========
+
 
 		//=====Création de la boundary
 		$boundary = "-----=".md5(rand());
 		//==========
-
-		//=====Définition du sujet.
-		$sujet = "Hey mon ami !";
-		//=========
 
 		//=====Création du header de l'e-mail.
 		$headers = "From: \"Vertigeo Website\"<vertigeo@ensg.eu>".$passage_ligne;
@@ -91,29 +43,33 @@
 		//=====Ajout du message au format texte.
 		$body.= "Content-Type: text/plain; charset=\"utf-8\"".$passage_ligne;
 		$body.= "Content-Transfer-Encoding: 8bit".$passage_ligne;
+		$body.= $passage_ligne."Message de ".$name.$passage_ligne;
+		$body.= $passage_ligne."Envoyé depuis le formulaire de contact du site de Vertigeo ".$passage_ligne;
+		$body.= $passage_ligne."Adresse mail de l'auteur :".$email.$passage_ligne;
+		$body.= $passage_ligne."Texte du message :".$passage_ligne;
+		$body.= $passage_ligne."===========".$passage_ligne;
 		$body.= $passage_ligne.$message.$passage_ligne;
+		$body.= $passage_ligne."===========".$passage_ligne;
+		$body.= $passage_ligne."Envoyé le ".date("d/m/Y - H:i").$passage_ligne;
 		//==========
 		$body.= $passage_ligne."--".$boundary.$passage_ligne;
 		//=====Ajout du message au format HTML
 		$body.= "Content-Type: text/html; charset=\"utf-8\"".$passage_ligne;
 		$body.= "Content-Transfer-Encoding: 8bit".$passage_ligne;
+		$body.= $passage_ligne."Message de : ".$name."<br /><br />".$passage_ligne;
+		$body.= $passage_ligne."Adresse mail de l'auteur : ".$email."<br />".$passage_ligne;
+		$body.= $passage_ligne."<br />Texte du message :<br />".$passage_ligne;
+		$body.= $passage_ligne."===========<br /><br />".$passage_ligne;
 		$body.= $passage_ligne.nl2br($message).$passage_ligne;
+		$body.= $passage_ligne."<br /><br />===========<br />".$passage_ligne;
+		$body.= $passage_ligne."Envoyé le ".date("d/m/Y - H:i")."<br />".$passage_ligne;
+		$body.= $passage_ligne."Depuis le formulaire de contact du site de Vertigeo <br />".$passage_ligne;
 		//==========
 		$body.= $passage_ligne."--".$boundary."--".$passage_ligne;
 		$body.= $passage_ligne."--".$boundary."--".$passage_ligne;
 		//==========
 
-		//
-		//
-		// $body = " ";
-		// $body .= "Message de ".$name." ";
-		// $body .= "Envoyé depuis le formulaire de contact du site de Vertigeo";
-		// $body .= "Adresse mail de l'auteur : ".$email." ";
-		// $body .= "Texte du message : ";
-		// $body .= "======== ";
-		// $body .= " ".$message." ";
-		// $body .= "======== ";
-		// $body .= "Envoyé le ".date("d/m/Y - H:i");
+
 
 
 		$errName = null;
