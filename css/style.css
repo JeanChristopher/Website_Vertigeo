@@ -4,7 +4,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('/img/utilisables/map.jpg');
+    background-image: url('../img/utilisables/map.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
@@ -43,7 +43,7 @@
     height: 100%;
     z-index: 1;
     opacity: 0.2;
-    background-image: url("/img/utilisables/ENSG_hall.jpg");
+    background-image: url("../img/utilisables/ENSG_hall.jpg");
     background-repeat: no-repeat;
     background-position: 50% 0;
     -ms-background-size: cover;
@@ -59,7 +59,7 @@
 
 #competencesContainterFluid {
     position: relative;
-    min-height: 600px;
+    min-height: 500px;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e1f2c4+0,e3f2ca+26,dbf6b0+79,dbfaa6+100 */
     background: #e1f2c4;
     /* Old browsers */
@@ -92,7 +92,7 @@
 
 #servicesContainterFluid {
     position: relative;
-    min-height: 800px;
+    min-height: 400px;
     background: rgba(50, 255, 18, 0.13);
     background: -moz-linear-gradient(left, rgba(50, 255, 18, 0.13) 0%, rgba(197, 243, 155, 1) 100%);
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(50, 255, 18, 0.13)), color-stop(100%, rgba(197, 243, 155, 1)));
@@ -123,7 +123,12 @@
 
 .space {
     min-height: 200px;
-    background-color: red; // TODO Change in production mode
+    /*background-color: red; // TODO Change in production mode*/
+}
+
+.half-space {
+    min-height: 100px;
+    /*background-color: red; // TODO Change in production mode*/
 }
 
 body {
@@ -303,15 +308,44 @@ html {
 }
 
 .bg-outer {
-  background: linear-gradient(to right, rgba(107, 111, 255, 0.42) 0%, rgba(44, 0, 200, 0.75) 100%);
+  background: linear-gradient(to right, rgba(168, 255, 161, 0.3) 0%, rgba(168, 232, 133, 0.5) 100%);
 }
 
-.devTools {
+/*.devTools {
   background-color : rgb(250, 255, 8);
-}
+}*/
 
 #mapid { height: 400px; }
 
+
+@media (max-width: 992px) {
+  #game_2048Container {
+    max-height:700px;
+    min-height:700px;
+    height:700px;
+  }
+}
+@media (min-width: 992px) {
 #game_2048Container {
+  max-height:400px;
+  min-height:400px;
   height:400px;
+}
+}
+
+/*The style definitions for the form-control class come below the style definitions for the bg-danger class in bootstrap.css (or bootstrap.min.css). Because of that, form-control styles override the background-color with white. */
+.form-control.bg-danger {
+    background-color: #f2dede;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 1.2em;
+  background: transparent;
+}
+.footer * {
+  color:rgb(46, 138, 134);
+  text-decoration: rgb(46, 138, 134);
 }
