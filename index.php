@@ -26,6 +26,9 @@ if(phpversion() >= 5.4) {
     <link rel="stylesheet" href="includes/bootstrap-3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="includes/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+    <link rel="stylesheet" href="includes/fancybox-2.1.6/source/jquery.fancybox.css?v=2.1.6" type="text/css" media="screen" />
+    <link rel="stylesheet" href="includes/fancybox-2.1.6/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+    <link rel="stylesheet" href="includes/fancybox-2.1.6/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
 
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -145,7 +148,8 @@ if(phpversion() >= 5.4) {
             </div>
             <div class="row form-group">
               <div class="col-md-offset-2 col-md-8 margin-shifted-vertical">
-                <p class="text-justify">Les <i>étudiants</i> et <i>étudiantes</i> que nous recrutons sont en formation à l'École Nationale des Sciences Géographiques. Ces études leur permet d'acquérir rapidement des compétences dans l'univers du numérique et de l'information géographique.
+                <p class="text-justify">Les <i>étudiants</i> et <i>étudiantes</i> que nous recrutons sont en formation à l'École Nationale des Sciences Géographiques. Ces études leur permet d'acquérir rapidement des compétences dans l'univers du numérique et de l'information
+                  géographique.
                 </p>
               </div>
             </div>
@@ -205,14 +209,43 @@ if(phpversion() >= 5.4) {
               </div>
             </div>
             <div class="col-md-3">
-              <div class="panel margin-shifted-vertical">
+              <div class="panel margin-shifted-vertical flex-col">
                 <div class="panel-heading ">
                   <h3 class="text-center helvetica">Ils nous ont fait confiance !</h3>
                 </div>
-                <div class="panel-body ">
-                  <p class="text-center">
-                    Blablabla
-                  </p>
+                <div class="panel-body flex-grow" id="panelMansoryContainer">
+                  <div id="gridMansoryContainer">
+
+                    <div class="grid">
+                      <div class="grid-sizer"></div>
+                      <div class="gutter-sizer"></div>
+
+                      <div class="grid-item grid-item--width3">
+                        <a class="fancybox-thumb" rel="fancybox-thumb" href="img/logos_partenaires/afigeo.jpg" title="Afigeo"><img src="img/logos_partenaires/afigeo.jpg" alt="" /></a>
+                      </div>
+                      <div class="grid-item grid-item--width2">
+                        <a class="fancybox-thumb" rel="fancybox-thumb" href="img/logos_partenaires/cci_essonne.jpg" title="CCI ESSONNE"><img src="img/logos_partenaires/cci_essonne.jpg" alt="" /></a>
+                      </div>
+                      <div class="grid-item grid-item--width5">
+                        <a class="fancybox-thumb" rel="fancybox-thumb" href="img/logos_partenaires/ign.png" title="IGN"><img src="img/logos_partenaires/ign.png" alt="" /></a>
+                      </div>
+                      <div class="grid-item grid-item--width2">
+                        <a class="fancybox-thumb" rel="fancybox-thumb" href="img/logos_partenaires/louvre.jpg" title="Le musée du Louvres"><img src="img/logos_partenaires/louvre.jpg" alt="" /></a>
+                      </div>
+                      <div class="grid-item grid-item--width4">
+                        <a class="fancybox-thumb" rel="fancybox-thumb" href="img/logos_partenaires/meteo_france.png" title="Météo France"><img src="img/logos_partenaires/meteo_france.png" alt="" /></a>
+                      </div>
+                      <div class="grid-item">
+                        <a class="fancybox-thumb" rel="fancybox-thumb" href="img/logos_partenaires/planet_observer.jpg" title="Planète Observer"><img src="img/logos_partenaires/planet_observer.jpg" alt="" /></a>
+                      </div>
+                      <div class="grid-item grid-item--width3">
+                        <a class="fancybox-thumb" rel="fancybox-thumb" href="img/logos_partenaires/ratp.jpg" title="RATP"><img src="img/logos_partenaires/ratp.jpg" alt="" /></a>
+                      </div>
+                      <div class="grid-item">
+                        <a class="fancybox-thumb" rel="fancybox-thumb" href="img/logos_partenaires/toposat.jpg" title="Toposat"><img src="img/logos_partenaires/toposat.jpg" alt="" /></a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -312,6 +345,21 @@ if(phpversion() >= 5.4) {
     <script type="text/javascript" src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?v=3.2&sensor=false"></script>
     <script type="text/javascript" src="http://matchingnotes.com/javascripts/leaflet-google.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+
+    <!-- Add mousewheel plugin (this is optional) -->
+    <script type="text/javascript" src="includes/fancybox-2.1.6/lib/jquery.mousewheel.pack.js"></script>
+
+    <!-- Add fancyBox -->
+    <script type="text/javascript" src="includes/fancybox-2.1.6/source/jquery.fancybox.pack.js?v=2.1.6"></script>
+
+    <!-- Optionally add helpers - button, thumbnail and/or media -->
+    <script type="text/javascript" src="includes/fancybox-2.1.6/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="includes/fancybox-2.1.6/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+    <script type="text/javascript" src="includes/fancybox-2.1.6/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
 
     <script type="text/javascript" src="js/config.global.js"></script>
     <script type="text/javascript" src="js/mentionsLegales.js"></script>

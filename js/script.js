@@ -33,7 +33,7 @@ function checkConfigurationLoaded() {
 
 
 
-function mapConfiguration() {
+function setLeaflet() {
 
     var googleStreet = L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
         maxZoom: 20,
@@ -163,10 +163,43 @@ function setDevelopperSettings(){
 $(function() {
     getConfiguration(config);
 
-    mapConfiguration();
-    setDefaultStyle();
+    activateInitializers();
 
     // setDevelopperSettings();
 
+    setDefaultStyle();
+
     setListeners();
 });
+
+
+function activateInitializers(){
+  setLeaflet();
+  setMansoryGrid();
+  setFancybox();
+}
+
+function setFancybox(){
+  $(".fancybox-thumb").fancybox({
+		prevEffect	: 'elastic',
+		nextEffect	: 'elastic',
+		helpers	: {
+			title	: {
+				type: 'outside'
+			},
+			thumbs	: {
+				width	: 50,
+				height	: 50
+			}
+		}
+	});
+}
+
+function setMansoryGrid(){
+  $('.grid').masonry({
+    columnWidth: '.grid-sizer',
+    gutter: '.gutter-sizer',
+    itemSelector: '.grid-item',
+    percentPosition: true
+  });
+}

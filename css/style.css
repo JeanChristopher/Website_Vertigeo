@@ -279,6 +279,13 @@ html {
     height: 100%;
 }
 
+
+.flex-grow {
+	display: flex;
+    -webkit-flex: 2;
+    flex: 2;
+}
+
 .parent-full {
     height: 100vh;
 }
@@ -348,4 +355,57 @@ html {
 .footer * {
   color:rgb(46, 138, 134);
   text-decoration: rgb(46, 138, 134);
+}
+
+#panelMansoryContainer {
+  padding: 10px;
+}
+
+#gridMansoryContainer {
+  width:100%;
+    border: 2px solid hsla(0, 0%, 0%, 0.7);
+    border-radius: 5px;
+    padding:10px;
+      background: #f9f9f9;
+}
+
+
+.gutter-sizer { width: 4%; }
+/* fluid 5 columns */
+
+
+.grid{
+}
+
+.grid-sizer,
+.grid-item {
+  width: 20%;
+  float: left;
+  border: 2px solid hsla(0, 0%, 0%, 0.2);
+  border-radius:5px;
+  /*background: #D26;*/
+  padding:0;
+  margin-bottom: 10px;
+}
+
+.grid-item img { width: 100%; }
+
+.grid-item--width2 {
+  width: 22%;
+}
+
+.grid-item--width3 {
+  width: 34%;
+}
+
+.grid-item--width4 {
+  width: 46%;
+}
+
+.grid-item--width5 {
+  width: 52%;
+}
+
+.grid-item--width6 {
+  width: 64%;
 }
