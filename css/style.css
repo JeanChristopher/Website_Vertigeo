@@ -120,7 +120,6 @@
     background-size: cover;
 }
 
-
 .space {
     min-height: 200px;
     /*background-color: red; // TODO Change in production mode*/
@@ -138,7 +137,6 @@ body {
 .lobster {
     font-family: Lobster, monospace;
 }
-
 
 .tangerine {
     font-family: Tangerine, monospace;
@@ -279,9 +277,8 @@ html {
     height: 100%;
 }
 
-
 .flex-grow {
-	display: flex;
+    display: flex;
     -webkit-flex: 2;
     flex: 2;
 }
@@ -305,111 +302,118 @@ html {
     }
 }
 
-.invert
-{
-        filter: invert(0);
-        -webkit-filter: invert(0);
-        -moz-filter: invert(0);
-        -o-filter: invert(0);
-        -ms-filter: invert(0);
+.invert {
+    filter: invert(0);
+    -webkit-filter: invert(0);
+    -moz-filter: invert(0);
+    -o-filter: invert(0);
+    -ms-filter: invert(0);
 }
 
 .bg-outer {
-  background: linear-gradient(to right, rgba(168, 255, 161, 0.3) 0%, rgba(168, 232, 133, 0.5) 100%);
+    background: linear-gradient(to right, rgba(168, 255, 161, 0.3) 0%, rgba(168, 232, 133, 0.5) 100%);
 }
+
 
 /*.devTools {
   background-color : rgb(250, 255, 8);
 }*/
 
-#mapid { height: 400px; }
-
+#mapid {
+    height: 400px;
+}
 
 @media (max-width: 992px) {
-  #game_2048Container {
-    max-height:700px;
-    min-height:700px;
-    height:700px;
-  }
-}
-@media (min-width: 992px) {
-#game_2048Container {
-  max-height:400px;
-  min-height:400px;
-  height:400px;
-}
+    #game_2048Container {
+        max-height: 700px;
+        min-height: 700px;
+        height: 700px;
+    }
 }
 
+@media (min-width: 992px) {
+    #game_2048Container {
+        max-height: 400px;
+        min-height: 400px;
+        height: 400px;
+    }
+}
+
+
 /*The style definitions for the form-control class come below the style definitions for the bg-danger class in bootstrap.css (or bootstrap.min.css). Because of that, form-control styles override the background-color with white. */
+
 .form-control.bg-danger {
     background-color: #f2dede;
 }
 
 .footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 1.2em;
-  background: transparent;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 1.2em;
+    background: transparent;
 }
+
 .footer * {
-  color:rgb(46, 138, 134);
-  text-decoration: rgb(46, 138, 134);
+    color: rgb(46, 138, 134);
+    text-decoration: rgb(46, 138, 134);
 }
 
 #panelMansoryContainer {
-  padding: 10px;
+    padding: 10px;
 }
 
 #gridMansoryContainer {
-  width:100%;
+    width: 100%;
     border: 2px solid hsla(0, 0%, 0%, 0.7);
     border-radius: 5px;
-    padding:10px;
-      background: #f9f9f9;
+    padding: 10px;
+    background: #f9f9f9;
+}
+
+.gutter-sizer {
+    width: 4%;
 }
 
 
-.gutter-sizer { width: 4%; }
 /* fluid 5 columns */
 
+.grid {}
 
-.grid{
+.grid-sizer, .grid-item {
+    width: 20%;
+    float: left;
+    border: 2px solid hsla(0, 0%, 0%, 0.2);
+    border-radius: 5px;
+    /*background: #D26;*/
+    padding: 0;
+    margin-bottom: 10px;
 }
 
-.grid-sizer,
-.grid-item {
-  width: 20%;
-  float: left;
-  border: 2px solid hsla(0, 0%, 0%, 0.2);
-  border-radius:5px;
-  /*background: #D26;*/
-  padding:0;
-  margin-bottom: 10px;
+.grid-item img {
+    width: 100%;
 }
-
-.grid-item img { width: 100%; }
 
 .grid-item--width2 {
-  width: 22%;
+    width: 22%;
 }
 
 .grid-item--width3 {
-  width: 34%;
+    width: 34%;
 }
 
 .grid-item--width4 {
-  width: 46%;
+    width: 46%;
 }
 
 .grid-item--width5 {
-  width: 52%;
+    width: 52%;
 }
 
 .grid-item--width6 {
-  width: 64%;
+    width: 64%;
 }
 
 .jumbotron {
-  position:relative;
+    position: relative;
 }

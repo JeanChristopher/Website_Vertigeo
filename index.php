@@ -70,204 +70,207 @@ if(phpversion() >= 5.4) {
       </div>
     </nav>
 
-<section id="sectionHome">
+    <section id="sectionHome">
 
-    <div class="row-fluid">
-      <div class="container-fluid no-padding-vertical no-margin-vertical" id="starterContainterFluid">
-        <div class="container" id="starterContainter">
-          <div class="row">
-            <div class="jumbotron">
-              <div class="container">
-                <div class="col-md-10 col-md-offset-1">
-                  <img src="img/utilisables/logo.png" alt="Logo Vertigeo" height="200px" class="img-responsive center-block" />
-                  <h3 class="text-center">l'association étudiante à vocation professionnelle au service de </h3>
-                  <h1 class="tangerine display-2 text-center">l'information géographique</h1>
+      <div class="row-fluid">
+        <div class="container-fluid no-padding-vertical no-margin-vertical" id="starterContainterFluid">
+          <div class="container" id="starterContainter">
+            <div class="row">
+              <div class="jumbotron">
+                <div class="container">
+                  <div class="col-md-10 col-md-offset-1">
+                    <img src="img/utilisables/logo.png" alt="Logo Vertigeo" height="200px" class="img-responsive center-block" />
+                    <h3 class="text-center">l'association étudiante à vocation professionnelle au service de </h3>
+                    <h1 class="tangerine display-2 text-center">l'information géographique</h1>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-  </section>
+    </section>
     <div class="space"></div>
     <section id="sectionCompetences">
 
-    <div class="jumbotron transparent no-padding-vertical no-margin-vertical" id="competencesSection">
-      <h2 class="lobster">Nos compétences</h2>
-      <div class="container-fluid" id="competencesContainterFluid">
-        <div class="row row-eq-height ">
-          <div class="col-md-4 margin-shifted-vertical">
-            <img src="img/utilisables/leve.jpg" alt="leve au tacheometre. Topographie" width="100%" height="auto" class="img-responsive" />
-          </div>
-          <div class="col-md-8 margin-shifted-vertical">
-            <div class="row form-group">
-              <div class="col-md-offset-3 col-md-6">
-                <div id="Carousel" class="carousel slide">
-                  <ol class="carousel-indicators">
-                    <li data-target="Carousel" data-slide-to="0" class="active"></li>
-                    <li data-target="Carousel" data-slide-to="1"></li>
-                    <li data-target="Carousel" data-slide-to="2"></li>
-                    <li data-target="Carousel" data-slide-to="3"></li>
-                  </ol>
+      <div class="jumbotron transparent no-padding-vertical no-margin-vertical" id="competencesSection">
+        <h2 class="lobster">Nos compétences</h2>
+        <div class="container-fluid" id="competencesContainterFluid">
+          <div class="row row-eq-height ">
+            <div class="col-md-4 margin-shifted-vertical">
+              <img src="img/utilisables/leve.jpg" alt="leve au tacheometre. Topographie" width="100%" height="auto" class="img-responsive" />
+            </div>
+            <div class="col-md-8 margin-shifted-vertical">
+              <div class="row form-group">
+                <div class="col-md-offset-3 col-md-6">
+                  <div id="Carousel" class="carousel slide">
+                    <ol class="carousel-indicators">
+                      <li data-target="Carousel" data-slide-to="0" class="active"></li>
+                      <li data-target="Carousel" data-slide-to="1"></li>
+                      <li data-target="Carousel" data-slide-to="2"></li>
+                      <li data-target="Carousel" data-slide-to="3"></li>
+                    </ol>
 
-                  <div class="carousel-inner">
-                    <div class="item active">
-                      <img src="img/utilisables/topometrie.jpg">
-                      <div class="carousel-caption d-none d-md-block">
-                        <h3>topometrie</h3>
-                        <p>topometrie</p>
+                    <div class="carousel-inner">
+                      <div class="item active">
+                        <img src="img/utilisables/topometrie.jpg">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h3>topometrie</h3>
+                          <p>topometrie</p>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <img src="img/utilisables/photogrammetrie.jpg">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h3>photogrammetrie</h3>
+                          <p>photogrammetrie</p>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <img src="img/utilisables/informatique.jpg">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h3>informatique</h3>
+                          <p>informatique</p>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <img src="img/utilisables/cartographie.jpg">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h3>cartographie</h3>
+                          <p>cartographie</p>
+                        </div>
                       </div>
                     </div>
-                    <div class="item">
-                      <img src="img/utilisables/photogrammetrie.jpg">
-                      <div class="carousel-caption d-none d-md-block">
-                        <h3>photogrammetrie</h3>
-                        <p>photogrammetrie</p>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <img src="img/utilisables/informatique.jpg">
-                      <div class="carousel-caption d-none d-md-block">
-                        <h3>informatique</h3>
-                        <p>informatique</p>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <img src="img/utilisables/cartographie.jpg">
-                      <div class="carousel-caption d-none d-md-block">
-                        <h3>cartographie</h3>
-                        <p>cartographie</p>
-                      </div>
-                    </div>
+
+                    <a class="left carousel-control" href="#Carousel" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#Carousel" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
                   </div>
-
-                  <a class="left carousel-control" href="#Carousel" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                  </a>
-                  <a class="right carousel-control" href="#Carousel" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                  </a>
                 </div>
               </div>
-            </div>
-            <div class="row form-group">
-              <div class="col-md-offset-2 col-md-8 margin-shifted-vertical">
-                <p class="text-justify">Les <i>étudiants</i> et <i>étudiantes</i> que nous recrutons sont en formation à l'École Nationale des Sciences Géographiques. Ces études leur permet d'acquérir rapidement des compétences dans l'univers du numérique et de l'information
-                  géographique.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </section>
-    <div class="space"></div>
-    <section id="sectionServices">
-
-    <div class="jumbotron transparent no-padding-vertical no-margin-vertical" id="serviceContainterFluidJumbotron">
-      <h2 class="lobster">Nos services</h2>
-      <div class="container-fluid" id="servicesContainterFluid">
-        <div class="container">
-          <div class="row equal">
-            <div class="col-md-3">
-              <div class="panel margin-shifted-vertical">
-                <div class="panel-heading ">
-                  <div class="text-center">
-                    <i class="fa fa-code fa-5x"></i>
-                  </div>
-                  <h3 class="text-center text-uppercase helvetica">Développement</h3>
-                </div>
-                <div class="panel-body">
-                  <p class="text-center">
-                    Nous sommes spécialisés dans les bases de données, les technologies web, les processus de traitement et la cartographie 2D / 3D. Nous voulons de nouveaux challenges !
+              <div class="row form-group">
+                <div class="col-md-offset-2 col-md-8 margin-shifted-vertical">
+                  <p class="text-justify">Les <i>étudiants</i> et <i>étudiantes</i> que nous recrutons sont en formation à l'École Nationale des Sciences Géographiques. Ces études leur permet d'acquérir rapidement des compétences dans l'univers du numérique et de l'information
+                    géographique.
                   </p>
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
-              <div class="panel margin-shifted-vertical">
-                <div class="panel-heading ">
-                  <div class="text-center">
-                    <i class="fa fa-globe fa-5x" aria-hidden="true"></i>
-                  </div>
-                  <h3 class="text-center text-uppercase helvetica">Expertise</h3>
-                </div>
-                <div class="panel-body ">
-
-                  <p class="text-center">
-                    Nos techniciens, nos licences professionnelles et nos ingénieurs maîtrisent leur domaine. Nous avons les compétences.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="panel margin-shifted-vertical">
-                <div class="panel-heading ">
-                  <div class="text-center">
-                    <i class="fa fa-newspaper-o fa-5x"></i>
-                  </div>
-                  <h3 class="text-center text-uppercase helvetica">Formation</h3>
-                </div>
-                <div class="panel-body ">
-                  <p class="text-center">
-                    Nous utilisons au quotidien les outils dont vous avez besoin. Nous aimerions les partager.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              Telecharger notre plaquette
-            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+
+    </section>
     <div class="space"></div>
-<section id="sectionPartenaires">
+    <section id="sectionServices">
 
-    <div class="jumbotron transparent no-padding-vertical no-margin-vertical" id="partenaireJumbotron">
-      <h2 class="lobster">Nos partenaires</h2>
-    <div class="container-fluid">
-      <div class="container">
-      <div class="row">
-        <div class="col-md-offset-1 col-md-10">
-          <div class="panel margin-shifted-vertical flex-col">
-            <div class="panel-heading ">
-              <h3 class="text-center helvetica">Ils nous font confiance !</h3>
+      <div class="jumbotron transparent no-padding-vertical no-margin-vertical" id="serviceContainterFluidJumbotron">
+        <h2 class="lobster">Nos services</h2>
+        <div class="container-fluid" id="servicesContainterFluid">
+          <div class="container">
+            <div class="row equal">
+              <div class="col-md-3">
+                <div class="panel margin-shifted-vertical">
+                  <div class="panel-heading ">
+                    <div class="text-center">
+                      <i class="fa fa-code fa-5x"></i>
+                    </div>
+                    <h3 class="text-center text-uppercase helvetica">Développement</h3>
+                  </div>
+                  <div class="panel-body">
+                    <p class="text-center">
+                      Nous sommes spécialisés dans les bases de données, les technologies web, les processus de traitement et la cartographie 2D / 3D. Nous voulons de nouveaux challenges !
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="panel margin-shifted-vertical">
+                  <div class="panel-heading ">
+                    <div class="text-center">
+                      <i class="fa fa-globe fa-5x" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="text-center text-uppercase helvetica">Expertise</h3>
+                  </div>
+                  <div class="panel-body ">
+
+                    <p class="text-center">
+                      Nos techniciens, nos licences professionnelles et nos ingénieurs maîtrisent leur domaine. Nous avons les compétences.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="panel margin-shifted-vertical">
+                  <div class="panel-heading ">
+                    <div class="text-center">
+                      <i class="fa fa-newspaper-o fa-5x"></i>
+                    </div>
+                    <h3 class="text-center text-uppercase helvetica">Formation</h3>
+                  </div>
+                  <div class="panel-body ">
+                    <p class="text-center">
+                      Nous utilisons au quotidien les outils dont vous avez besoin. Nous aimerions les partager.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                Telecharger notre plaquette
+              </div>
             </div>
-            <div class="panel-body flex-grow" id="panelMansoryContainer">
-              <div id="gridMansoryContainer">
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="space"></div>
+    <section id="sectionPartenaires">
 
-                <div class="grid">
-                  <div class="grid-sizer"></div>
-                  <div class="gutter-sizer"></div>
+      <div class="jumbotron transparent no-padding-vertical no-margin-vertical" id="partenaireJumbotron">
+        <h2 class="lobster">Nos partenaires</h2>
+        <div class="container-fluid">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-offset-1 col-md-10">
+                <div class="panel margin-shifted-vertical flex-col">
+                  <div class="panel-heading ">
+                    <h3 class="text-center helvetica">Ils nous font confiance !</h3>
+                  </div>
+                  <div class="panel-body flex-grow" id="panelMansoryContainer">
+                    <div id="gridMansoryContainer">
 
-                  <div class="grid-item grid-item--width2">
-                    <a class="fancybox-thumb" rel="fancybox-thumb" href="img/logos_partenaires/afigeo.jpg" title="Afigeo"><img src="img/logos_partenaires/afigeo.jpg" alt="" /></a>
-                  </div>
-                  <div class="grid-item grid-item--width3">
-                    <a class="fancybox-thumb" rel="fancybox-thumb" href="img/logos_partenaires/cci_essonne.jpg" title="CCI ESSONNE"><img src="img/logos_partenaires/cci_essonne.jpg" alt="" /></a>
-                  </div>
-                  <div class="grid-item grid-item--width2">
-                    <a class="fancybox-thumb" rel="fancybox-thumb" href="img/logos_partenaires/ign.png" title="IGN"><img src="img/logos_partenaires/ign.png" alt="" /></a>
-                  </div>
-                  <div class="grid-item grid-item--width2">
-                    <a class="fancybox-thumb" rel="fancybox-thumb" href="img/logos_partenaires/louvre.jpg" title="Le musée du Louvres"><img src="img/logos_partenaires/louvre.jpg" alt="" /></a>
-                  </div>
-                  <div class="grid-item grid-item--width3">
-                    <a class="fancybox-thumb" rel="fancybox-thumb" href="img/logos_partenaires/meteo_france.png" title="Météo France"><img src="img/logos_partenaires/meteo_france.png" alt="" /></a>
-                  </div>
-                  <div class="grid-item">
-                    <a class="fancybox-thumb" rel="fancybox-thumb" href="img/logos_partenaires/planet_observer.jpg" title="Planète Observer"><img src="img/logos_partenaires/planet_observer.jpg" alt="" /></a>
-                  </div>
-                  <div class="grid-item grid-item--width2">
-                    <a class="fancybox-thumb" rel="fancybox-thumb" href="img/logos_partenaires/ratp.jpg" title="RATP"><img src="img/logos_partenaires/ratp.jpg" alt="" /></a>
-                  </div>
-                  <div class="grid-item">
-                    <a class="fancybox-thumb" rel="fancybox-thumb" href="img/logos_partenaires/toposat.jpg" title="Toposat"><img src="img/logos_partenaires/toposat.jpg" alt="" /></a>
+                      <div class="grid">
+                        <div class="grid-sizer"></div>
+                        <div class="gutter-sizer"></div>
+
+                        <div class="grid-item grid-item--width2">
+                          <a class="fancybox-thumb" rel="fancybox-thumb" href="img/logos_partenaires/afigeo.jpg" title="Afigeo"><img src="img/logos_partenaires/afigeo.jpg" alt="" /></a>
+                        </div>
+                        <div class="grid-item grid-item--width3">
+                          <a class="fancybox-thumb" rel="fancybox-thumb" href="img/logos_partenaires/cci_essonne.jpg" title="CCI ESSONNE"><img src="img/logos_partenaires/cci_essonne.jpg" alt="" /></a>
+                        </div>
+                        <div class="grid-item grid-item--width2">
+                          <a class="fancybox-thumb" rel="fancybox-thumb" href="img/logos_partenaires/ign.png" title="IGN"><img src="img/logos_partenaires/ign.png" alt="" /></a>
+                        </div>
+                        <div class="grid-item grid-item--width2">
+                          <a class="fancybox-thumb" rel="fancybox-thumb" href="img/logos_partenaires/louvre.jpg" title="Le musée du Louvres"><img src="img/logos_partenaires/louvre.jpg" alt="" /></a>
+                        </div>
+                        <div class="grid-item grid-item--width3">
+                          <a class="fancybox-thumb" rel="fancybox-thumb" href="img/logos_partenaires/meteo_france.png" title="Météo France"><img src="img/logos_partenaires/meteo_france.png" alt="" /></a>
+                        </div>
+                        <div class="grid-item">
+                          <a class="fancybox-thumb" rel="fancybox-thumb" href="img/logos_partenaires/planet_observer.jpg" title="Planète Observer"><img src="img/logos_partenaires/planet_observer.jpg" alt="" /></a>
+                        </div>
+                        <div class="grid-item grid-item--width2">
+                          <a class="fancybox-thumb" rel="fancybox-thumb" href="img/logos_partenaires/ratp.jpg" title="RATP"><img src="img/logos_partenaires/ratp.jpg" alt="" /></a>
+                        </div>
+                        <div class="grid-item">
+                          <a class="fancybox-thumb" rel="fancybox-thumb" href="img/logos_partenaires/toposat.jpg" title="Toposat"><img src="img/logos_partenaires/toposat.jpg" alt="" /></a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -275,90 +278,87 @@ if(phpversion() >= 5.4) {
           </div>
         </div>
       </div>
-    </div>
-    </div>
-    </div>
 
-  </section>
+    </section>
     <div class="space"></div>
 
     <section id="sectionContact">
 
-    <div class="jumbotron transparent no-padding-vertical no-margin-vertical" id="contactContainterFluidJumbotron">
-      <h2 class="lobster">Nous contacter</h2>
-      <div class="container-fluid bg-outer" id="contactContainterFluid">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2 ">
+      <div class="jumbotron transparent no-padding-vertical no-margin-vertical" id="contactContainterFluidJumbotron">
+        <h2 class="lobster">Nous contacter</h2>
+        <div class="container-fluid bg-outer" id="contactContainterFluid">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2 ">
 
-              <div class="container  margin-shifted-vertical">
-                <h3>Envoyez-nous un message : </h3>
-                <form id="form_mail" class="form-horizontal" role="form" accept-charset="UTF-8">
-                  <div class="input-group full-width">
-                    <label for="name" class="col-sm-2 control-label">Nom</label>
-                    <div class="col-sm-10">
-                      <input type="text" class="form-control" id="name" name="name" data-toggle="tooltip" data-placement="right" placeholder="Prénom Nom">
+                <div class="container  margin-shifted-vertical">
+                  <h3>Envoyez-nous un message : </h3>
+                  <form id="form_mail" class="form-horizontal" role="form" accept-charset="UTF-8">
+                    <div class="input-group full-width">
+                      <label for="name" class="col-sm-2 control-label">Nom</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" id="name" name="name" data-toggle="tooltip" data-placement="right" placeholder="Prénom Nom">
+                      </div>
                     </div>
-                  </div>
-                  <div class="input-group full-width">
-                    <label for="email" class="col-sm-2 control-label">Email</label>
-                    <div class="col-sm-10">
-                      <input type="email" class="form-control" id="email" name="email" data-toggle="tooltip" data-placement="right" placeholder="example@domain.com">
+                    <div class="input-group full-width">
+                      <label for="email" class="col-sm-2 control-label">Email</label>
+                      <div class="col-sm-10">
+                        <input type="email" class="form-control" id="email" name="email" data-toggle="tooltip" data-placement="right" placeholder="example@domain.com">
+                      </div>
                     </div>
-                  </div>
-                  <div class="input-group full-width">
-                    <label for="message" class="col-sm-2 control-label">Message</label>
-                    <div class="col-sm-10">
-                      <textarea id="message" class="form-control" rows="4" name="message" data-toggle="tooltip" data-placement="right" placeholder="Je réfléchis à un projet de SIG web depuis longtemps. J'aimerai le confier à un étudiant en géomatique. J'ai alors pensé à vous. J'aimerai vous rencontrer pour en discuter. Quand êtes-vous disponible ?"></textarea>
+                    <div class="input-group full-width">
+                      <label for="message" class="col-sm-2 control-label">Message</label>
+                      <div class="col-sm-10">
+                        <textarea id="message" class="form-control" rows="4" name="message" data-toggle="tooltip" data-placement="right" placeholder="Je réfléchis à un projet de SIG web depuis longtemps. J'aimerai le confier à un étudiant en géomatique. J'ai alors pensé à vous. J'aimerai vous rencontrer pour en discuter. Quand êtes-vous disponible ?"></textarea>
+                      </div>
                     </div>
-                  </div>
-                  <div class="input-group full-width margin-shifted-vertical">
-                    <label for="human" class="col-sm-2 control-label">2 + 3 = </label>
-                    <div class="col-sm-10">
-                      <input type="text" class="form-control" id="human" name="human" placeholder="?" data-toggle="tooltip" data-placement="right">
+                    <div class="input-group full-width margin-shifted-vertical">
+                      <label for="human" class="col-sm-2 control-label">2 + 3 = </label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" id="human" name="human" placeholder="?" data-toggle="tooltip" data-placement="right">
+                      </div>
                     </div>
-                  </div>
-                  <div class="input-group full-width margin-shifted-vertical">
-                    <div class="col-sm-10 col-sm-offset-2 ">
-                      <input id="submit" type="submit" value="Envoyer" class="btn btn-primary pull-right" data-toggle="tooltip" data-placement="right">
+                    <div class="input-group full-width margin-shifted-vertical">
+                      <div class="col-sm-10 col-sm-offset-2 ">
+                        <input id="submit" type="submit" value="Envoyer" class="btn btn-primary pull-right" data-toggle="tooltip" data-placement="right">
+                      </div>
                     </div>
-                  </div>
-                  <div class="form-group full-width">
-                    <div class="col-sm-10 col-sm-offset-2">
+                    <div class="form-group full-width">
+                      <div class="col-sm-10 col-sm-offset-2">
+                      </div>
                     </div>
-                  </div>
-                </form>
+                  </form>
+                </div>
+
               </div>
-
             </div>
-          </div>
 
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2 ">
-              <h3>Détendez-vous le temps que nous vous répondons : </h3>
-              <div class="container">
-                <div class="col-md-8 col-md-offset-2" id="game_2048Container">
-                  <iframe src="includes/game_2048/2048_bis.html" scrolling="no" frameborder="0" style="border: 0; top:0; left:0; right:0; bottom:0; width:100%; height:100%;"></iframe>
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2 ">
+                <h3>Détendez-vous le temps que nous vous répondons : </h3>
+                <div class="container">
+                  <div class="col-md-8 col-md-offset-2" id="game_2048Container">
+                    <iframe src="includes/game_2048/2048_bis.html" scrolling="no" frameborder="0" style="border: 0; top:0; left:0; right:0; bottom:0; width:100%; height:100%;"></iframe>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2 ">
-              <h3>Vous êtes les bienvenus :</h3>
-              <div class="container margin-shifted-vertical">
-                <div class="col-md-10 col-md-offset-2">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2 ">
+                <h3>Vous êtes les bienvenus :</h3>
+                <div class="container margin-shifted-vertical">
+                  <div class="col-md-10 col-md-offset-2">
 
-                  <div id="mapid"></div>
+                    <div id="mapid"></div>
+                  </div>
+
                 </div>
-
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
     <div class="modal fade" id="mentionsLegalesModal" tabindex="-1" role="dialog" aria-labelledby="Mentions légales" aria-hidden="true"></div>
 
