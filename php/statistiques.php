@@ -41,7 +41,7 @@ function ipTracking(){
     error_log("ip tracking", 0);
 
     if (!file_exists($filename)){
-        file_put_contents($filename,"IP,hostname,city,region,country,loc,org,postal\n",FILE_APPEND|LOCK_EX);
+        file_put_contents($filename,"IP,hostname,city,region,country,latitude,longitude,org,postal\n",FILE_APPEND|LOCK_EX);
     }
 
     if(!isset($_SESSION['iptracked']))
@@ -58,7 +58,9 @@ function ipTracking(){
                 $string .= addslashes($array['city']).",";
                 $string .= addslashes($array['region']).",";
                 $string .= addslashes($array['country']).",";
-                $string .= addslashes($array['loc']).",";
+                $loc = explode(",", addslashes($array['loc']));
+                $string .= addslashes($loc[0]).",";
+                $string .= addslashes($loc[1]).",";
                 $string .= addslashes($array['org']).",";
                 $string .= addslashes($array['postal'])."\n";
 
