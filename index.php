@@ -17,8 +17,14 @@ if(phpversion() >= 5.4) {
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="Site internet de Vertigéo">
+    <meta name="description" content="Vertigéo, l'asso étudiante professionnelle de l'ENSG">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <meta property="og:title" content="Vertigéo, l'asso étudiante professionnelle de l'ENSG" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://vertigeo.ensg.eu" />
+    <meta property="og:image" content="img/utilisables/logo.png" />
+
     <link rel="icon" type="image/png" href="img/utilisables/icon.png" />
     <title>Vertigéo</title>
     <link rel="stylesheet" href="fonts/lobster/lobster.css">

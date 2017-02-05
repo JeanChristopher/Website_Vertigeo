@@ -21,6 +21,15 @@ $('#GoBack[href*=\\#]').on('click', function(event) {
 });
 
 
+function sendData(){
+  $.ajax({
+    url: 'php/statistiques.php',
+    type: 'POST',
+    data: {"statistics":"sent"}
+  });
+
+}
+
 
 function setCarousel() {
     $('.carousel').carousel({
@@ -193,6 +202,7 @@ function setDevelopperSettings() {
 $(function() {
     getConfiguration(config);
 
+    sendData();
     activateInitializers();
 
     // setDevelopperSettings();
