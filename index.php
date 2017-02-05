@@ -61,16 +61,21 @@ if(phpversion() >= 5.4) {
             <li><a href="#sectionContact">Contact</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a target="_blank" href="https://fr.linkedin.com/in/vertigéo-ensg-0bb45126">
-              <i class="fa fa-linkedin-square fa-lg" style="color:#0077B5;"></i>
-              LinkedIn</a></li>
-            <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100008796610594&fref=ts">
-              <i class="fa fa-facebook-square fa-lg" style="color:#4267b2;"></i>
-              Facebook
-            </a></li>
-            <li><a target="_blank" href="https://github.com/Tofull/Website_Vertigeo">
-              <i class="fa fa-github-square fa-lg " ></i>
-              Github</a></li>
+            <li>
+              <a target="_blank" href="https://fr.linkedin.com/in/vertigéo-ensg-0bb45126">
+                <i class="fa fa-linkedin-square fa-lg" style="color:#0077B5;"></i> LinkedIn
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.facebook.com/profile.php?id=100008796610594&fref=ts">
+                <i class="fa fa-facebook-square fa-lg" style="color:#4267b2;"></i> Facebook
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://github.com/Tofull/Website_Vertigeo">
+                <i class="fa fa-github-square fa-lg "></i> Github
+              </a>
+            </li>
           </ul>
         </div>
         <!--/.nav-collapse -->
@@ -102,7 +107,7 @@ if(phpversion() >= 5.4) {
     <section id="sectionCompetences">
 
       <div class="jumbotron transparent no-padding-vertical no-margin-vertical" id="competencesSection">
-        <h2 class="lobster">Nos compétences</h2>
+        <h2 class="lobster margin-shifted-side">Nos compétences</h2>
         <div class="container-fluid" id="competencesContainterFluid">
           <div class="row row-eq-height ">
             <div class="col-md-4 margin-shifted-vertical">
@@ -180,7 +185,7 @@ if(phpversion() >= 5.4) {
     <section id="sectionServices">
 
       <div class="jumbotron transparent no-padding-vertical no-margin-vertical" id="serviceContainterFluidJumbotron">
-        <h2 class="lobster">Nos services</h2>
+        <h2 class="lobster margin-shifted-side">Nos services</h2>
         <div class="container-fluid" id="servicesContainterFluid">
           <div class="container">
             <div class="row equal">
@@ -229,18 +234,44 @@ if(phpversion() >= 5.4) {
                 </div>
               </div>
               <div class="col-md-3">
-                Telecharger notre plaquette
+                <div class="container margin-shifted-vertical">
+                  <div class="row">
+                    <div class="centerizedParent">
+                      <div class="centerizedChildren">
+
+
+                        <div class="text-center">
+                          <h4 class="helvetica">Notre plaquette : </h4>
+
+
+                          <a target="_blank" href="assets/Vertigeo_plaquette.pdf">
+                            <div class="verticallyDispatch">
+                              <span>
+
+                                    <i class="fa fa-file-pdf-o fa-4x" aria-hidden="true" style="color:red"></i>
+                                  </span><span>
+                                    pdf
+                                  </span>
+                            </div>
+
+                          </a>
+
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
     </section>
     <div class="space"></div>
     <section id="sectionPartenaires">
 
       <div class="jumbotron transparent no-padding-vertical no-margin-vertical" id="partenaireJumbotron">
-        <h2 class="lobster">Nos partenaires</h2>
+        <h2 class="lobster margin-shifted-side">Nos partenaires</h2>
         <div class="container-fluid">
           <div class="container">
             <div class="row">
@@ -296,7 +327,7 @@ if(phpversion() >= 5.4) {
     <section id="sectionContact">
 
       <div class="jumbotron transparent no-padding-vertical no-margin-vertical" id="contactContainterFluidJumbotron">
-        <h2 class="lobster">Nous contacter</h2>
+        <h2 class="lobster margin-shifted-side">Nous contacter</h2>
         <div class="container-fluid bg-outer" id="contactContainterFluid">
           <div class="container">
             <div class="row">
@@ -371,6 +402,17 @@ if(phpversion() >= 5.4) {
       </div>
     </section>
 
+    <div class="half-space"></div>
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-offset-5 col-md-2 margin-shifted-vertical">
+            <a href="#sectionHome" id="GoBack"><img src="img/utilisables/logo.png" alt="Logo Vertigeo" width="100%"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <div class="modal fade" id="mentionsLegalesModal" tabindex="-1" role="dialog" aria-labelledby="Mentions légales" aria-hidden="true"></div>
 
 
@@ -380,7 +422,6 @@ if(phpversion() >= 5.4) {
       </div>
     </footer>
 
-    <div class="half-space"></div>
     <script type="text/javascript" src="includes/jquery-3.1.1/jquery-3.1.1.js"></script>
     <script type="text/javascript" src="includes/bootstrap-3.3.7/js/bootstrap.js"></script>
     <script type="text/javascript" src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
