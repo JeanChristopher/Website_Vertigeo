@@ -1,9 +1,19 @@
 $('#navbar a[href*=\\#]').on('click', function(event) {
     event.preventDefault();
-    console.log("clicked");
     $('html,body').animate({
-        scrollTop: $(this.hash).offset().top - 75
+        scrollTop: $(this.hash).offset().top-60
     }, 500);
+
+
+});
+
+$('.navbar .navbar-brand[href*=\\#]').on('click', function(event) {
+    event.preventDefault();
+    $('html,body').animate({
+        scrollTop: 0
+    }, 500);
+
+
 });
 
 

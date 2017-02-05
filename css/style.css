@@ -409,3 +409,7 @@ html {
 .grid-item--width6 {
   width: 64%;
 }
+
+.jumbotron {
+  position:relative;
+}

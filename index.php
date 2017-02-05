@@ -18,7 +18,7 @@ if(phpversion() >= 5.4) {
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="Site internet de Vertigéo">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="icon" type="image/png" href="img/utilisables/icon.png" />
     <title>Vertigéo</title>
     <link rel="stylesheet" href="fonts/lobster/lobster.css">
@@ -33,7 +33,7 @@ if(phpversion() >= 5.4) {
     <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <body data-spy="scroll" data-target=".navbar-fixed-top" data-offset="40">
+  <body data-spy="scroll" data-target=".navbar-fixed-top" data-offset="120">
     <!-- <div id="background"></div> -->
     <!-- <div class="DEVTOOLS">
       <ul>
@@ -51,13 +51,14 @@ if(phpversion() >= 5.4) {
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#starterContainterFluid">Vertigéo</a>
+          <a class="navbar-brand" href="#sectionHome">Vertigéo</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="#competencesSection">Nos compétences</a></li>
-            <li><a href="#serviceContainterFluidJumbotron">Nos services</a></li>
-            <li><a href="#contactContainterFluidJumbotron">Contact</a></li>
+            <li><a href="#sectionCompetences">Nos compétences</a></li>
+            <li><a href="#sectionServices">Nos services</a></li>
+            <li><a href="#sectionPartenaires">Nos partenaires</a></li>
+            <li><a href="#sectionContact">Contact</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a target="_blank" href="https://fr.linkedin.com/in/vertigéo-ensg-0bb45126">LinkedIn</a></li>
@@ -69,6 +70,7 @@ if(phpversion() >= 5.4) {
       </div>
     </nav>
 
+<section id="sectionHome">
 
     <div class="row-fluid">
       <div class="container-fluid no-padding-vertical no-margin-vertical" id="starterContainterFluid">
@@ -87,7 +89,11 @@ if(phpversion() >= 5.4) {
         </div>
       </div>
     </div>
+
+  </section>
     <div class="space"></div>
+    <section id="sectionCompetences">
+
     <div class="jumbotron transparent no-padding-vertical no-margin-vertical" id="competencesSection">
       <h2 class="lobster">Nos compétences</h2>
       <div class="container-fluid" id="competencesContainterFluid">
@@ -158,7 +164,10 @@ if(phpversion() >= 5.4) {
       </div>
     </div>
 
+  </section>
     <div class="space"></div>
+    <section id="sectionServices">
+
     <div class="jumbotron transparent no-padding-vertical no-margin-vertical" id="serviceContainterFluidJumbotron">
       <h2 class="lobster">Nos services</h2>
       <div class="container-fluid" id="servicesContainterFluid">
@@ -209,42 +218,56 @@ if(phpversion() >= 5.4) {
               </div>
             </div>
             <div class="col-md-3">
-              <div class="panel margin-shifted-vertical flex-col">
-                <div class="panel-heading ">
-                  <h3 class="text-center helvetica">Ils nous ont fait confiance !</h3>
-                </div>
-                <div class="panel-body flex-grow" id="panelMansoryContainer">
-                  <div id="gridMansoryContainer">
+              Telecharger notre plaquette
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <div class="space"></div>
+<section id="sectionPartenaires">
 
-                    <div class="grid">
-                      <div class="grid-sizer"></div>
-                      <div class="gutter-sizer"></div>
+    <div class="jumbotron transparent no-padding-vertical no-margin-vertical" id="partenaireJumbotron">
+      <h2 class="lobster">Nos partenaires</h2>
+    <div class="container-fluid">
+      <div class="container">
+      <div class="row">
+        <div class="col-md-offset-1 col-md-10">
+          <div class="panel margin-shifted-vertical flex-col">
+            <div class="panel-heading ">
+              <h3 class="text-center helvetica">Ils nous font confiance !</h3>
+            </div>
+            <div class="panel-body flex-grow" id="panelMansoryContainer">
+              <div id="gridMansoryContainer">
 
-                      <div class="grid-item grid-item--width3">
-                        <a class="fancybox-thumb" rel="fancybox-thumb" href="img/logos_partenaires/afigeo.jpg" title="Afigeo"><img src="img/logos_partenaires/afigeo.jpg" alt="" /></a>
-                      </div>
-                      <div class="grid-item grid-item--width2">
-                        <a class="fancybox-thumb" rel="fancybox-thumb" href="img/logos_partenaires/cci_essonne.jpg" title="CCI ESSONNE"><img src="img/logos_partenaires/cci_essonne.jpg" alt="" /></a>
-                      </div>
-                      <div class="grid-item grid-item--width5">
-                        <a class="fancybox-thumb" rel="fancybox-thumb" href="img/logos_partenaires/ign.png" title="IGN"><img src="img/logos_partenaires/ign.png" alt="" /></a>
-                      </div>
-                      <div class="grid-item grid-item--width2">
-                        <a class="fancybox-thumb" rel="fancybox-thumb" href="img/logos_partenaires/louvre.jpg" title="Le musée du Louvres"><img src="img/logos_partenaires/louvre.jpg" alt="" /></a>
-                      </div>
-                      <div class="grid-item grid-item--width4">
-                        <a class="fancybox-thumb" rel="fancybox-thumb" href="img/logos_partenaires/meteo_france.png" title="Météo France"><img src="img/logos_partenaires/meteo_france.png" alt="" /></a>
-                      </div>
-                      <div class="grid-item">
-                        <a class="fancybox-thumb" rel="fancybox-thumb" href="img/logos_partenaires/planet_observer.jpg" title="Planète Observer"><img src="img/logos_partenaires/planet_observer.jpg" alt="" /></a>
-                      </div>
-                      <div class="grid-item grid-item--width3">
-                        <a class="fancybox-thumb" rel="fancybox-thumb" href="img/logos_partenaires/ratp.jpg" title="RATP"><img src="img/logos_partenaires/ratp.jpg" alt="" /></a>
-                      </div>
-                      <div class="grid-item">
-                        <a class="fancybox-thumb" rel="fancybox-thumb" href="img/logos_partenaires/toposat.jpg" title="Toposat"><img src="img/logos_partenaires/toposat.jpg" alt="" /></a>
-                      </div>
-                    </div>
+                <div class="grid">
+                  <div class="grid-sizer"></div>
+                  <div class="gutter-sizer"></div>
+
+                  <div class="grid-item grid-item--width2">
+                    <a class="fancybox-thumb" rel="fancybox-thumb" href="img/logos_partenaires/afigeo.jpg" title="Afigeo"><img src="img/logos_partenaires/afigeo.jpg" alt="" /></a>
+                  </div>
+                  <div class="grid-item grid-item--width3">
+                    <a class="fancybox-thumb" rel="fancybox-thumb" href="img/logos_partenaires/cci_essonne.jpg" title="CCI ESSONNE"><img src="img/logos_partenaires/cci_essonne.jpg" alt="" /></a>
+                  </div>
+                  <div class="grid-item grid-item--width2">
+                    <a class="fancybox-thumb" rel="fancybox-thumb" href="img/logos_partenaires/ign.png" title="IGN"><img src="img/logos_partenaires/ign.png" alt="" /></a>
+                  </div>
+                  <div class="grid-item grid-item--width2">
+                    <a class="fancybox-thumb" rel="fancybox-thumb" href="img/logos_partenaires/louvre.jpg" title="Le musée du Louvres"><img src="img/logos_partenaires/louvre.jpg" alt="" /></a>
+                  </div>
+                  <div class="grid-item grid-item--width3">
+                    <a class="fancybox-thumb" rel="fancybox-thumb" href="img/logos_partenaires/meteo_france.png" title="Météo France"><img src="img/logos_partenaires/meteo_france.png" alt="" /></a>
+                  </div>
+                  <div class="grid-item">
+                    <a class="fancybox-thumb" rel="fancybox-thumb" href="img/logos_partenaires/planet_observer.jpg" title="Planète Observer"><img src="img/logos_partenaires/planet_observer.jpg" alt="" /></a>
+                  </div>
+                  <div class="grid-item grid-item--width2">
+                    <a class="fancybox-thumb" rel="fancybox-thumb" href="img/logos_partenaires/ratp.jpg" title="RATP"><img src="img/logos_partenaires/ratp.jpg" alt="" /></a>
+                  </div>
+                  <div class="grid-item">
+                    <a class="fancybox-thumb" rel="fancybox-thumb" href="img/logos_partenaires/toposat.jpg" title="Toposat"><img src="img/logos_partenaires/toposat.jpg" alt="" /></a>
                   </div>
                 </div>
               </div>
@@ -253,7 +276,13 @@ if(phpversion() >= 5.4) {
         </div>
       </div>
     </div>
+    </div>
+    </div>
+
+  </section>
     <div class="space"></div>
+
+    <section id="sectionContact">
 
     <div class="jumbotron transparent no-padding-vertical no-margin-vertical" id="contactContainterFluidJumbotron">
       <h2 class="lobster">Nous contacter</h2>
@@ -329,6 +358,7 @@ if(phpversion() >= 5.4) {
         </div>
       </div>
     </div>
+  </section>
 
     <div class="modal fade" id="mentionsLegalesModal" tabindex="-1" role="dialog" aria-labelledby="Mentions légales" aria-hidden="true"></div>
 
