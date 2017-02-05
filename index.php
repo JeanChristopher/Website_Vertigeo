@@ -110,58 +110,62 @@ if(phpversion() >= 5.4) {
             </div>
             <div class="col-md-8 margin-shifted-vertical">
               <div class="row form-group">
-                <div class="col-md-offset-3 col-md-6">
-                  <div id="Carousel" class="carousel slide">
+                <div class="col-md-offset-2 col-md-8">
+                  <div id="myCarousel" class="carousel slide">
                     <ol class="carousel-indicators">
-                      <li data-target="Carousel" data-slide-to="0" class="active"></li>
-                      <li data-target="Carousel" data-slide-to="1"></li>
-                      <li data-target="Carousel" data-slide-to="2"></li>
-                      <li data-target="Carousel" data-slide-to="3"></li>
+                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel" data-slide-to="1"></li>
+                      <li data-target="#myCarousel" data-slide-to="2"></li>
+                      <li data-target="#myCarousel" data-slide-to="3"></li>
                     </ol>
 
                     <div class="carousel-inner">
                       <div class="item active">
                         <img src="img/utilisables/topometrie.jpg">
                         <div class="carousel-caption d-none d-md-block">
-                          <h3>topometrie</h3>
-                          <p>topometrie</p>
+                          <h3>Topométrie</h3>
                         </div>
                       </div>
                       <div class="item">
                         <img src="img/utilisables/photogrammetrie.jpg">
                         <div class="carousel-caption d-none d-md-block">
-                          <h3>photogrammetrie</h3>
-                          <p>photogrammetrie</p>
+                          <h3>Photogrammétrie</h3>
                         </div>
                       </div>
                       <div class="item">
                         <img src="img/utilisables/informatique.jpg">
                         <div class="carousel-caption d-none d-md-block">
-                          <h3>informatique</h3>
-                          <p>informatique</p>
+                          <h3>Informatique</h3>
                         </div>
                       </div>
                       <div class="item">
                         <img src="img/utilisables/cartographie.jpg">
                         <div class="carousel-caption d-none d-md-block">
-                          <h3>cartographie</h3>
-                          <p>cartographie</p>
+                          <h3>Cartographie</h3>
                         </div>
                       </div>
                     </div>
+                  </div>
+                  <div>
 
-                    <a class="left carousel-control" href="#Carousel" data-slide="prev">
-                      <span class="glyphicon glyphicon-chevron-left"></span>
+                    <a id="leftCarouselControler" class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
                     </a>
-                    <a class="right carousel-control" href="#Carousel" data-slide="next">
-                      <span class="glyphicon glyphicon-chevron-right"></span>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
                     </a>
+                  </div>
+                  <div class="text-center">
+
+                    <div class="new-caption-area"></div>
                   </div>
                 </div>
               </div>
               <div class="row form-group">
                 <div class="col-md-offset-2 col-md-8 margin-shifted-vertical">
-                  <p class="text-justify">Les <i>étudiants</i> et <i>étudiantes</i> que nous recrutons sont en formation à l'École Nationale des Sciences Géographiques. Ces études leur permet d'acquérir rapidement des compétences dans l'univers du numérique et de l'information
+                  <p class="text-justify">Les <i>étudiants</i> et <i>étudiantes</i> que nous recrutons sont en formation à l'École Nationale des Sciences Géographiques. Ces études leur permettent d'acquérir rapidement des compétences dans l'univers du numérique et de l'information
                     géographique.
                   </p>
                 </div>

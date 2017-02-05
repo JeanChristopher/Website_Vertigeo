@@ -15,9 +15,24 @@ $('.navbar .navbar-brand[href*=\\#]').on('click', function(event) {
 });
 
 
-$('.carousel').carousel({
-    interval: 2000
-});
+
+function setCarousel(){
+    $('.carousel').carousel({interval:3000});
+    var caption = $('div.item:nth-child(1) .carousel-caption');
+    $('.new-caption-area').html(caption.html());
+    caption.css('display', 'none');
+
+    $(".carousel").on('slide.bs.carousel', function (evt) {
+        var caption = $('div.item:nth-child(' + ($(evt.relatedTarget).index() + 1) + ') .carousel-caption');
+        $('.new-caption-area').html(caption.html());
+        caption.css('display', 'none');
+    });
+
+    $('.carousel-indicators  li').on('mouseover',function(){
+        $(this).trigger('click');
+    });
+}
+
 
 
 function getConfiguration(callback) {
@@ -184,6 +199,7 @@ function activateInitializers() {
     setLeaflet();
     setMansoryGrid();
     setFancybox();
+    setCarousel();
 }
 
 function setFancybox() {

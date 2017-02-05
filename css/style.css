@@ -11,6 +11,11 @@
     opacity: 0.1;
     filter: alpha(opacity=10);
 }
+/*.carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto;
+}*/
 
 #starterContainterFluid {
     position: relative;
@@ -80,7 +85,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: 0;
     opacity: 0.5;
     background-position: 50% 0;
     -ms-background-size: cover;
@@ -110,7 +115,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    z-index: 0;
+    z-index: 1;
     opacity: 0.5;
     background-position: 50% 0;
     -ms-background-size: cover;
@@ -119,6 +124,7 @@
     -webkit-background-size: cover;
     background-size: cover;
 }
+
 
 .space {
     min-height: 200px;
@@ -217,10 +223,11 @@ html {
     padding-bottom: 0;
 }
 
+
 .carousel-inner>.item>img {
-    width: 320px;
-    height: 240px;
-    margin: 0 auto;
+  margin: 0 auto;
+  height: 240px;
+  object-fit: contain;
 }
 
 .margin-shifted-vertical {
