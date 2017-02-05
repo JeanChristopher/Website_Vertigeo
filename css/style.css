@@ -153,6 +153,35 @@
     -webkit-background-size: cover;
     background-size: cover;
 }
+#partenaireContainterFluid {
+    position: relative;
+    min-height: 400px;
+    background: rgba(50, 255, 18, 0.13);
+    background: -moz-linear-gradient(left, rgba(50, 255, 18, 0.13) 0%, rgba(197, 243, 155, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(50, 255, 18, 0.13)), color-stop(100%, rgba(197, 243, 155, 1)));
+    background: -webkit-linear-gradient(left, rgba(50, 255, 18, 0.13) 0%, rgba(197, 243, 155, 1) 100%);
+    background: -o-linear-gradient(left, rgba(50, 255, 18, 0.13) 0%, rgba(197, 243, 155, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(50, 255, 18, 0.13) 0%, rgba(197, 243, 155, 1) 100%);
+    background: linear-gradient(to right, rgba(50, 255, 18, 0.13) 0%, rgba(197, 243, 155, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#32ff12', endColorstr='#c5f39b', GradientType=1);
+}
+
+#partenaireContainterFluid:before {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.5;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
 
 .space {
     min-height: 200px;
