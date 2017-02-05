@@ -61,9 +61,16 @@ if(phpversion() >= 5.4) {
             <li><a href="#sectionContact">Contact</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a target="_blank" href="https://fr.linkedin.com/in/vertigéo-ensg-0bb45126">LinkedIn</a></li>
-            <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100008796610594&fref=ts">FaceBook</a></li>
-            <li><a target="_blank" href="https://github.com/Tofull/Website_Vertigeo">Github</a></li>
+            <li><a target="_blank" href="https://fr.linkedin.com/in/vertigéo-ensg-0bb45126">
+              <i class="fa fa-linkedin-square fa-lg" style="color:#0077B5;"></i>
+              LinkedIn</a></li>
+            <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100008796610594&fref=ts">
+              <i class="fa fa-facebook-square fa-lg" style="color:#4267b2;"></i>
+              Facebook
+            </a></li>
+            <li><a target="_blank" href="https://github.com/Tofull/Website_Vertigeo">
+              <i class="fa fa-github-square fa-lg " ></i>
+              Github</a></li>
           </ul>
         </div>
         <!--/.nav-collapse -->
