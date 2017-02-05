@@ -357,7 +357,7 @@ if(phpversion() >= 5.4) {
                     <div class="input-group full-width">
                       <label for="message" class="col-sm-2 control-label">Message</label>
                       <div class="col-sm-10">
-                        <textarea id="message" class="form-control" rows="4" name="message" data-toggle="tooltip" data-placement="right" placeholder="Je réfléchis à un projet de SIG web depuis longtemps. J'aimerai le confier à un étudiant en géomatique. J'ai alors pensé à vous. J'aimerai vous rencontrer pour en discuter. Quand êtes-vous disponible ?"></textarea>
+                        <textarea id="message" class="form-control" rows="4" name="message" data-toggle="tooltip" data-placement="right" placeholder="Je réfléchis à un projet de SIG web depuis longtemps. J'aimerais le confier à un étudiant en géomatique. J'ai alors pensé à vous. J'aimerai vous rencontrer pour en discuter. Quand êtes-vous disponible ?"></textarea>
                       </div>
                     </div>
                     <div class="input-group full-width margin-shifted-vertical">
