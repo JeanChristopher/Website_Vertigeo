@@ -37,6 +37,7 @@ if(phpversion() >= 5.4) {
     <link rel="stylesheet" href="includes/fancybox-2.1.6/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/caroussel.css">
   </head>
 
   <body data-spy="scroll" data-target=".navbar-fixed-top" data-offset="120">
@@ -109,20 +110,28 @@ if(phpversion() >= 5.4) {
       </div>
 
     </section>
+
     <div class="space"></div>
     <section id="sectionCompetences">
 
       <div class="jumbotron transparent no-padding-vertical no-margin-vertical" id="competencesSection">
         <h2 class="lobster margin-shifted-side">Nos compétences</h2>
         <div class="container-fluid" id="competencesContainterFluid">
-          <div class="row row-eq-height ">
-            <div class="col-md-4 margin-shifted-vertical">
-              <img src="img/utilisables/leve.jpg" alt="leve au tacheometre. Topographie" width="100%" height="auto" class="img-responsive" />
-            </div>
-            <div class="col-md-8 margin-shifted-vertical">
-              <div class="row form-group">
-                <div class="col-md-offset-2 col-md-8">
-                  <div id="myCarousel" class="carousel slide">
+          <div class="container fill">
+
+            <div class="row-eq-height no-padding-vertical fill">
+              <div class="col-md-4 no-padding-vertical fill">
+                <!-- <img src="img/utilisables/leve.jpg" alt="" width="100%" height="100%" class="fill"> -->
+                <div class="fill">
+                    <div class="fill parallax-window " data-parallax="scroll" data-image-src="img/utilisables/leve.jpg" data-z-index="3"></div>
+                  </div>
+              </div>
+
+              <div class="col-md-8">
+
+                <div>
+
+                  <!-- <div id="myCarousel" class="carousel slide">
                     <ol class="carousel-indicators">
                       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                       <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -156,28 +165,61 @@ if(phpversion() >= 5.4) {
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div>
+                    <div>
 
-                    <a id="leftCarouselControler" class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </div>
-                  <div class="text-center">
-
-                    <div class="new-caption-area"></div>
-                  </div>
+                    </div>
+                    <span class="text-center">
+                      <span class="new-caption-area" >Coucou</span>
+                    </span>
+                  </div> -->
+                  <!-- Indicators -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="img/utilisables/topometrie.jpg">
+            <span class="carousel-caption" >
+              <h3><span  class="captionStyle">Topométrie</span></h3>
+            </span>
+          </div>
+          <div class="item">
+            <img src="img/utilisables/photogrammetrie.jpg">
+            <div class="carousel-caption">
+              <h3><span  class="captionStyle">Photogrammétrie</span></h3>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/utilisables/informatique.jpg">
+            <div class="carousel-caption">
+              <h3><span  class="captionStyle">Informatique</span></h3>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/utilisables/cartographie.jpg">
+            <div class="carousel-caption">
+              <h3><span  class="captionStyle">Cartographie</span></h3>
+            </div>
+          </div>
+        </div>
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="fa fa-angle-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="fa fa-angle-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+    </div>
                 </div>
-              </div>
-              <div class="row form-group">
-                <div class="col-md-offset-2 col-md-8 margin-shifted-vertical">
-                  <p class="text-justify">Les <i>étudiants</i> et <i>étudiantes</i> que nous recrutons sont en formation à l'École Nationale des Sciences Géographiques. Ces études leur permettent d'acquérir rapidement des compétences dans l'univers du numérique et de l'information
-                    géographique.
+                <div class="">
+                  <p class="text-justify">La formation à l'<a href="http://ensg.eu" class="nounderline">École Nationale des Sciences Géographiques</a> permet aux étudiants d'acquérir rapidement des compétences dans l'univers du numérique et de l'information géographique.
                   </p>
                 </div>
               </div>
@@ -185,8 +227,10 @@ if(phpversion() >= 5.4) {
           </div>
         </div>
       </div>
-
     </section>
+
+
+
     <div class="space"></div>
     <section id="sectionServices">
 
@@ -430,6 +474,7 @@ if(phpversion() >= 5.4) {
 
     <script type="text/javascript" src="includes/jquery-3.1.1/jquery-3.1.1.js"></script>
     <script type="text/javascript" src="includes/bootstrap-3.3.7/js/bootstrap.js"></script>
+    <script type="text/javascript" src="includes/parallax.js-1.4.2/parallax.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?v=3.2&sensor=false"></script>
     <script type="text/javascript" src="http://matchingnotes.com/javascripts/leaflet-google.js"></script>

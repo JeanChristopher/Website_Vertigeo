@@ -217,7 +217,13 @@ function activateInitializers() {
     setLeaflet();
     setMansoryGrid();
     setFancybox();
-    setCarousel();
+    // setCarousel();
+    setParallax();
+}
+
+
+function setParallax(){
+  $('.parallax-window').parallax({imageSrc: "img/utilisables/leve.jpg"});
 }
 
 function setFancybox() {

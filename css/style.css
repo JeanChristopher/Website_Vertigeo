@@ -91,20 +91,18 @@
     align-items: center;
 }
 
+
 #competencesContainterFluid {
     position: relative;
     min-height: 500px;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e1f2c4+0,e3f2ca+26,dbf6b0+79,dbfaa6+100 */
-    background: #e1f2c4;
-    /* Old browsers */
-    background: -moz-linear-gradient(left, #e1f2c4 0%, #e3f2ca 26%, #dbf6b0 79%, #dbfaa6 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #e1f2c4 0%, #e3f2ca 26%, #dbf6b0 79%, #dbfaa6 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #e1f2c4 0%, #e3f2ca 26%, #dbf6b0 79%, #dbfaa6 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1f2c4', endColorstr='#dbfaa6', GradientType=1);
-    /* IE6-9 */
+    background: rgba(50, 255, 18, 0.13);
+    background: -moz-linear-gradient(left, rgba(50, 255, 18, 0.13) 0%, rgba(197, 243, 155, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(50, 255, 18, 0.13)), color-stop(100%, rgba(197, 243, 155, 1)));
+    background: -webkit-linear-gradient(left, rgba(50, 255, 18, 0.13) 0%, rgba(197, 243, 155, 1) 100%);
+    background: -o-linear-gradient(left, rgba(50, 255, 18, 0.13) 0%, rgba(197, 243, 155, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(50, 255, 18, 0.13) 0%, rgba(197, 243, 155, 1) 100%);
+    background: linear-gradient(to right, rgba(50, 255, 18, 0.13) 0%, rgba(197, 243, 155, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#32ff12', endColorstr='#c5f39b', GradientType=1);
 }
 
 #competencesContainterFluid:before {
@@ -123,6 +121,7 @@
     -webkit-background-size: cover;
     background-size: cover;
 }
+
 
 #servicesContainterFluid {
     position: relative;
@@ -272,6 +271,15 @@ html {
     margin-bottom: 0;
 }
 
+.parallax-window {
+    min-height: inherit;
+    background: transparent;
+}
+
+.fill {
+  min-height: inherit;
+}
+
 .no-padding-vertical {
     padding-top: 0;
     padding-bottom: 0;
@@ -279,8 +287,11 @@ html {
 
 .carousel-inner>.item>img {
     margin: 0 auto;
-    height: 240px;
-    object-fit: contain;
+
+    /*height: 300px;*/
+    width:100%;
+    max-height: 300px;
+    object-fit: cover;
 }
 
 .margin-shifted-vertical {
@@ -399,6 +410,12 @@ html {
     }
 }
 
+@media (min-width: 992px) {
+    body {
+        padding-top: 51px;
+    }
+}
+
 
 /*The style definitions for the form-control class come below the style definitions for the bg-danger class in bootstrap.css (or bootstrap.min.css). Because of that, form-control styles override the background-color with white. */
 
@@ -476,4 +493,8 @@ html {
 
 .jumbotron {
     position: relative;
+}
+
+.nounderline{text-decoration: none !important;
+  color:inherit;
 }
