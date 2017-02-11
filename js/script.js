@@ -63,6 +63,7 @@ function getConfiguration(callback) {
 
     console.log("CONFIGURATION LOADED");
     console.log(config.configurations.token);
+
 }
 
 
@@ -171,9 +172,15 @@ function setListeners() {
                     $("#submit").attr("title", "Problème dans l'envoi du mail.");
                     $('#submit').tooltip('show');
                 } else {
-                    $("#submit").toggleClass("btn-default");
+                    $.notify({
+                    	title: '<strong> Formulaire de contact </strong>',
+                    	message: 'Votre message a bien été envoyé.'
+                    },{
+                    	type: 'success'
+                    });
+                    $("#submit").toggleClass("btn-success");
                     setTimeout(function() {
-                        $("#submit").toggleClass("btn-default");
+                        $("#submit").toggleClass("btn-success");
                     }, 2000);
 
                 }
