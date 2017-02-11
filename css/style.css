@@ -185,12 +185,12 @@
 }
 
 .space {
-    min-height: 200px;
+    min-height: 7em;
     /*background-color: red; // TODO Change in production mode*/
 }
 
 .half-space {
-    min-height: 100px;
+    min-height: 3em;
     /*background-color: red; // TODO Change in production mode*/
 }
 
