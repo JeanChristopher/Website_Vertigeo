@@ -182,7 +182,7 @@
 }
 
 .space {
-    min-height: 7em;
+    min-height: 10em;
     /*background-color: red; // TODO Change in production mode*/
 }
 

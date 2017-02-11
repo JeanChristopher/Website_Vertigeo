@@ -247,11 +247,10 @@ if(phpversion() >= 5.4) {
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
-                <div class="container margin-shifted-vertical">
-                  <div class="row">
+              <div class="col-md-3 ">
+                <div class="margin-shifted-vertical" style="min-height:100px;">
                     <div class="centerizedParent">
-                      <div class="centerizedChildren">
+                      <div class="centerizedChildren" style="background:white; border-radius:5px">
 
 
                         <div class="text-center">
@@ -272,8 +271,6 @@ if(phpversion() >= 5.4) {
 
                         </div>
                       </div>
-                    </div>
-
                   </div>
                 </div>
               </div>
@@ -290,7 +287,7 @@ if(phpversion() >= 5.4) {
           <div class="container">
             <div class="row">
               <div class="col-md-offset-1 col-md-10">
-                <div class="panel margin-shifted-vertical flex-col">
+                <div class="panel margin-shifted-vertical flex-col" style="background:transparent;">
                   <div class="panel-heading ">
                     <h3 class="text-center helvetica">Ils nous font confiance !</h3>
                   </div>
