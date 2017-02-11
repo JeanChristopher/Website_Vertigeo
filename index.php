@@ -376,7 +376,7 @@ if(phpversion() >= 5.4) {
                     </div>
                     <div class="input-group full-width margin-shifted-vertical">
                       <div class="col-sm-10 col-sm-offset-2 ">
-                        <input id="submit" type="submit" value="Envoyer" class="btn btn-primary pull-right" data-toggle="tooltip" data-placement="right">
+                        <input id="submit" type="submit" value="Envoyer" class="btn btn-default pull-right" data-toggle="tooltip" data-placement="right">
                       </div>
                     </div>
                     <div class="form-group full-width">

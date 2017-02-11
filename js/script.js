@@ -170,9 +170,9 @@ function setListeners() {
                     $("#submit").attr("title", "Problème dans l'envoi du mail.");
                     $('#submit').tooltip('show');
                 } else {
-                    $("#submit").toggleClass("btn-success");
+                    $("#submit").toggleClass("btn-default");
                     setTimeout(function() {
-                        $("#submit").toggleClass("btn-success");
+                        $("#submit").toggleClass("btn-default");
                     }, 2000);
 
                 }
