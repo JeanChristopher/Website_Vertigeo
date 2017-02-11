@@ -12,6 +12,7 @@
     filter: alpha(opacity=10);
 }
 
+textarea { resize:vertical; max-height:300px; }
 
 /*.carousel-caption {
     position: relative;
