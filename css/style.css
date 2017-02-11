@@ -153,6 +153,7 @@
     -webkit-background-size: cover;
     background-size: cover;
 }
+
 #partenaireContainterFluid {
     position: relative;
     min-height: 400px;
@@ -191,10 +192,6 @@
 .half-space {
     min-height: 100px;
     /*background-color: red; // TODO Change in production mode*/
-}
-
-body {
-    padding-top: 70px;
 }
 
 .lobster {
