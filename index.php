@@ -98,6 +98,7 @@ if(phpversion() >= 5.4) {
               <div class="jumbotron">
                 <div class="container">
                   <div class="col-md-10 col-md-offset-1">
+                    <div class="spaceMobile"></div>
                     <img src="img/utilisables/logo.png" alt="Logo Vertigeo" height="200px" class="img-responsive center-block" />
                     <h3 class="text-center">l'association étudiante à vocation professionnelle au service de </h3>
                     <h1 class="tangerine display-2 text-center">l'information géographique</h1>
@@ -123,7 +124,7 @@ if(phpversion() >= 5.4) {
               <div class="col-md-4 no-padding-vertical fill">
                 <!-- <img src="img/utilisables/leve.jpg" alt="" width="100%" height="100%" class="fill"> -->
                 <div class="fill">
-                  <div class="fill parallax-window " data-parallax="scroll" data-image-src="img/utilisables/leve.jpg" data-z-index="3"></div>
+                  <div class="fill parallax-window " id="photoParallax" data-parallax="scroll" data-image-src="img/utilisables/leve.jpg" data-z-index="3"></div>
                 </div>
               </div>
 
