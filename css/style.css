@@ -91,7 +91,6 @@
     align-items: center;
 }
 
-
 #competencesContainterFluid {
     position: relative;
     min-height: 500px;
@@ -121,7 +120,6 @@
     -webkit-background-size: cover;
     background-size: cover;
 }
-
 
 #servicesContainterFluid {
     position: relative;
@@ -277,21 +275,12 @@ html {
 }
 
 .fill {
-  min-height: inherit;
+    min-height: inherit;
 }
 
 .no-padding-vertical {
     padding-top: 0;
     padding-bottom: 0;
-}
-
-.carousel-inner>.item>img {
-    margin: 0 auto;
-
-    /*height: 300px;*/
-    width:100%;
-    max-height: 300px;
-    object-fit: cover;
 }
 
 .margin-shifted-vertical {
@@ -495,6 +484,7 @@ html {
     position: relative;
 }
 
-.nounderline{text-decoration: none !important;
-  color:inherit;
+.nounderline {
+    text-decoration: none !important;
+    color: inherit;
 }

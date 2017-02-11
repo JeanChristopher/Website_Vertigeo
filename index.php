@@ -123,28 +123,22 @@ if(phpversion() >= 5.4) {
               <div class="col-md-4 no-padding-vertical fill">
                 <!-- <img src="img/utilisables/leve.jpg" alt="" width="100%" height="100%" class="fill"> -->
                 <div class="fill">
-                    <div class="fill parallax-window " data-parallax="scroll" data-image-src="img/utilisables/leve.jpg" data-z-index="3"></div>
-                  </div>
+                  <div class="fill parallax-window " data-parallax="scroll" data-image-src="img/utilisables/leve.jpg" data-z-index="3"></div>
+                </div>
               </div>
 
-              <div class="col-md-8">
+              <div class="col-md-8 margin-shifted-vertical">
 
                 <div>
-
-                  <!-- <div id="myCarousel" class="carousel slide">
-                    <ol class="carousel-indicators">
-                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                      <li data-target="#myCarousel" data-slide-to="1"></li>
-                      <li data-target="#myCarousel" data-slide-to="2"></li>
-                      <li data-target="#myCarousel" data-slide-to="3"></li>
-                    </ol>
-
-                    <div class="carousel-inner">
+                  <!-- Indicators -->
+                  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
                       <div class="item active">
                         <img src="img/utilisables/topometrie.jpg">
-                        <div class="carousel-caption d-none d-md-block">
+                        <span class="carousel-caption d-none d-md-block">
                           <h3>Topométrie</h3>
-                        </div>
+                        </span>
                       </div>
                       <div class="item">
                         <img src="img/utilisables/photogrammetrie.jpg">
@@ -165,58 +159,28 @@ if(phpversion() >= 5.4) {
                         </div>
                       </div>
                     </div>
-                    <div>
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control prev" href="#myCarousel" role="button" data-slide="prev">
+                      <span class="fa fa-angle-left fa-2x" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control next" href="#myCarousel" role="button" data-slide="next">
+                      <span class="fa fa-angle-right fa-2x" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
 
-                    </div>
-                    <span class="text-center">
-                      <span class="new-caption-area" >Coucou</span>
+                    <ol class="carousel-indicators">
+                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel" data-slide-to="1"></li>
+
+                      <li data-target="#myCarousel" data-slide-to="2"></li>
+                      <li data-target="#myCarousel" data-slide-to="3"></li>
+                    </ol>
+
+                    <span class="carousel-captionCustom no-padding-vertical no-margin-vertical">
+                        <span class="automaticLabel captionStyleCustom  no-padding-vertical no-margin-vertical"></span>
                     </span>
-                  </div> -->
-                  <!-- Indicators -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-          <div class="item active">
-            <img src="img/utilisables/topometrie.jpg">
-            <span class="carousel-caption" >
-              <h3><span  class="captionStyle">Topométrie</span></h3>
-            </span>
-          </div>
-          <div class="item">
-            <img src="img/utilisables/photogrammetrie.jpg">
-            <div class="carousel-caption">
-              <h3><span  class="captionStyle">Photogrammétrie</span></h3>
-            </div>
-          </div>
-          <div class="item">
-            <img src="img/utilisables/informatique.jpg">
-            <div class="carousel-caption">
-              <h3><span  class="captionStyle">Informatique</span></h3>
-            </div>
-          </div>
-          <div class="item">
-            <img src="img/utilisables/cartographie.jpg">
-            <div class="carousel-caption">
-              <h3><span  class="captionStyle">Cartographie</span></h3>
-            </div>
-          </div>
-        </div>
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-            <span class="fa fa-angle-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-            <span class="fa fa-angle-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-            <li data-target="#myCarousel" data-slide-to="3"></li>
-        </ol>
-    </div>
+                  </div>
                 </div>
                 <div class="">
                   <p class="text-justify">La formation à l'<a href="http://ensg.eu" class="nounderline">École Nationale des Sciences Géographiques</a> permet aux étudiants d'acquérir rapidement des compétences dans l'univers du numérique et de l'information géographique.

@@ -21,32 +21,34 @@ $('#GoBack[href*=\\#]').on('click', function(event) {
 });
 
 
-function sendData(){
-  $.ajax({
-    url: 'php/statistiques.php',
-    type: 'POST',
-    data: {"statistics":"sent"}
-  });
+function sendData() {
+    $.ajax({
+        url: 'php/statistiques.php',
+        type: 'POST',
+        data: {
+            "statistics": "sent"
+        }
+    });
 
 }
 
 
 function setCarousel() {
-    $('.carousel').carousel({
-        interval: 3000
+
+
+    $('.carousel-indicators  li').on('mouseover', function() {
+        $(this).trigger('click');
     });
+
     var caption = $('div.item:nth-child(1) .carousel-caption');
-    $('.new-caption-area').html(caption.html());
+    $('.automaticLabel').html(caption.html());
     caption.css('display', 'none');
 
     $(".carousel").on('slide.bs.carousel', function(evt) {
         var caption = $('div.item:nth-child(' + ($(evt.relatedTarget).index() + 1) + ') .carousel-caption');
-        $('.new-caption-area').html(caption.html());
-        caption.css('display', 'none');
-    });
+        $('.automaticLabel').html(caption.html());
 
-    $('.carousel-indicators  li').on('mouseover', function() {
-        $(this).trigger('click');
+        caption.css('display', 'none');
     });
 }
 
@@ -217,13 +219,15 @@ function activateInitializers() {
     setLeaflet();
     setMansoryGrid();
     setFancybox();
-    // setCarousel();
+    setCarousel();
     setParallax();
 }
 
 
-function setParallax(){
-  $('.parallax-window').parallax({imageSrc: "img/utilisables/leve.jpg"});
+function setParallax() {
+    $('.parallax-window').parallax({
+        imageSrc: "img/utilisables/leve.jpg"
+    });
 }
 
 function setFancybox() {
