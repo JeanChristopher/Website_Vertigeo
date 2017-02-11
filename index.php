@@ -203,7 +203,7 @@ if(phpversion() >= 5.4) {
         <div class="container-fluid" id="servicesContainterFluid">
           <div class="container">
             <div class="row equal">
-              <div class="col-md-3">
+              <div class="col-md-4">
                 <div class="panel margin-shifted-vertical">
                   <div class="panel-heading ">
                     <div class="text-center">
@@ -218,7 +218,7 @@ if(phpversion() >= 5.4) {
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-4">
                 <div class="panel margin-shifted-vertical">
                   <div class="panel-heading ">
                     <div class="text-center">
@@ -233,7 +233,7 @@ if(phpversion() >= 5.4) {
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-4">
                 <div class="panel margin-shifted-vertical">
                   <div class="panel-heading ">
                     <div class="text-center">
@@ -247,36 +247,33 @@ if(phpversion() >= 5.4) {
                   </div>
                 </div>
               </div>
-              <div class="col-md-3 ">
-                <div class="margin-shifted-vertical" style="min-height:100px;">
-                    <div class="centerizedParent">
-                      <div class="centerizedChildren" style="background:white; border-radius:5px">
 
+            </div>
+            <div class="row">
+              <div class="col-md-offset-3 col-md-6 ">
+                <div class="margin-shifted-vertical " style="min-height:100px">
+                  <div class="">
+                    <div class="text-center" style="background:white; border-radius:5px ; padding:0.5em 1em;">
+                      <span style="display:flex;align-items: center; justify-content: center;">
 
-                        <div class="text-center">
-                          <h4 class="helvetica">Notre plaquette : </h4>
+                        <h4 style="display:inline; float:left; margin-right:2em; ">Télécharger notre plaquette : </h4>
+                        <div class="text-center" style="float:right;">
 
-
-                          <a target="_blank" href="assets/Vertigeo_plaquette.pdf">
-                            <div class="verticallyDispatch">
-                              <span>
-
-                                    <i class="fa fa-file-pdf-o fa-4x" aria-hidden="true" style="color:red"></i>
-                                  </span><span>
-                                    pdf
-                                  </span>
-                            </div>
-
-                          </a>
-
-                        </div>
-                      </div>
+                        <a href="assets/Vertigeo_plaquette.pdf" target="_blank">
+                          <span class="verticallyDispatch">
+                            <span class="fa fa-file-pdf-o fa-4x" style="color:red"></span> pdf
+                      </span>
+                      </a>
+                    </div>
+                    </span>
                   </div>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
+      </div>
     </section>
     <div class="space"></div>
     <section id="sectionPartenaires">
