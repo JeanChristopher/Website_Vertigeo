@@ -387,13 +387,16 @@ if(phpversion() >= 5.4) {
             </div>
 
             <div class="row">
-              <div class="col-md-8 col-md-offset-2 ">
+              <div class=" col-sm-offset-2 col-sm-8 hidden-md-down">
                 <h3>Détendez-vous le temps que nous vous répondons : </h3>
-                <div class="container">
-                  <div class="col-md-8 col-md-offset-2" id="game_2048Container">
-                    <iframe src="includes/game_2048/2048_bis.html" scrolling="no" frameborder="0" style="border: 0; top:0; left:0; right:0; bottom:0; width:100%; height:100%;"></iframe>
+                <div class="row">
+
+                <div class="container" id="gameContainer">
+                  <div class="col-sm-8 col-sm-offset-2" id="game_2048Container">
+                    <iframe src="includes/game_2048/2048_bis.html" scrolling="no" frameborder="0" style="border: 0; top:0; left:0; right:0; bottom:0; max-width:100%; height:100%;"></iframe>
                   </div>
                 </div>
+              </div>
               </div>
             </div>
             <div class="row">
