@@ -89,7 +89,8 @@ function setLeaflet() {
     });
 
     var marker = L.marker([48.8413019, 2.5876218]).addTo(map);
-    marker.bindPopup("<b>&hearts; Vertigéo &hearts;</b>").openPopup();
+
+    marker.bindPopup("<b>&hearts; Vertigéo &hearts;</b><br>6 et 8 Avenue Blaise Pascal,<br> Cité Descartes, <br>77420 Champs-sur-Marne").openPopup();
 }
 
 function setListeners() {
