@@ -399,7 +399,7 @@ if(phpversion() >= 5.4) {
 
             <div class="row">
               <div class=" col-sm-offset-2 col-sm-8 hidden-md-down">
-                <h3>Détendez-vous le temps que nous vous répondons : </h3>
+                <h3>Détendez-vous le temps que nous vous répondions : </h3>
                 <div class="row">
 
                 <div class="container" id="gameContainer">
