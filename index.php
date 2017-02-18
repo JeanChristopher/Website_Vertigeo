@@ -136,25 +136,37 @@ if(phpversion() >= 5.4) {
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner" role="listbox">
                       <div class="item active">
-                        <img src="img/utilisables/topometrie.jpg">
-                        <span class="carousel-caption d-none d-md-block">
-                          <h3>Topométrie</h3>
-                        </span>
-                      </div>
-                      <div class="item">
-                        <img src="img/utilisables/photogrammetrie.jpg">
+                        <img src="img/utilisables/photogrammetrie.jpg" alt="photogrammetrie ensg">
                         <div class="carousel-caption d-none d-md-block">
                           <h3>Photogrammétrie</h3>
                         </div>
                       </div>
                       <div class="item">
-                        <img src="img/utilisables/informatique.jpg">
+                        <img src="img/utilisables/topometrie.jpg" alt="topometrie ensg">
+                        <span class="carousel-caption d-none d-md-block">
+                          <h3>Topométrie</h3>
+                        </span>
+                      </div>
+                      <div class="item">
+                        <img src="img/utilisables/mesure3D.jpg" alt="mesures 3d ensg">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h3>Scan 3D</h3>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <img src="img/utilisables/informatique.jpg" alt="informatique ensg">
                         <div class="carousel-caption d-none d-md-block">
                           <h3>Informatique</h3>
                         </div>
                       </div>
                       <div class="item">
-                        <img src="img/utilisables/cartographie.jpg">
+                        <img src="img/utilisables/nivellement.jpg" alt="nivellement ensg">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h3>Nivellement</h3>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <img src="img/utilisables/cartographie.png" alt="cartographie ensg">
                         <div class="carousel-caption d-none d-md-block">
                           <h3>Cartographie</h3>
                         </div>
@@ -173,9 +185,10 @@ if(phpversion() >= 5.4) {
                     <ol class="carousel-indicators">
                       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                       <li data-target="#myCarousel" data-slide-to="1"></li>
-
                       <li data-target="#myCarousel" data-slide-to="2"></li>
                       <li data-target="#myCarousel" data-slide-to="3"></li>
+                      <li data-target="#myCarousel" data-slide-to="4"></li>
+                      <li data-target="#myCarousel" data-slide-to="5"></li>
                     </ol>
 
                     <span class="carousel-captionCustom no-padding-vertical no-margin-vertical">
