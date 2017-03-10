@@ -448,6 +448,7 @@ if(phpversion() >= 5.4) {
     </footer>
 
     <script type="text/javascript" src="includes/jquery-3.1.1/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="includes/imagesloaded-4.1/imagesloaded.min.js"></script>
     <script type="text/javascript" src="includes/bootstrap-3.3.7/js/bootstrap.js"></script>
     <script type="text/javascript" src="includes/parallax.js-1.4.2/parallax.min.js"></script>
     <script type="text/javascript" src="includes/bootstrap-notify/bootstrap-notify.min.js"></script>

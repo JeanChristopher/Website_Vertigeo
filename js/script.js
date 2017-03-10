@@ -255,10 +255,12 @@ function setFancybox() {
 }
 
 function setMansoryGrid() {
-    $('.grid').masonry({
-        columnWidth: '.grid-sizer',
-        gutter: '.gutter-sizer',
-        itemSelector: '.grid-item',
-        percentPosition: true
-    });
+	$(".grid").imagesLoaded(function(){
+	    $('.grid').masonry({
+		columnWidth: '.grid-sizer',
+		gutter: '.gutter-sizer',
+		itemSelector: '.grid-item',
+		percentPosition: true
+	    });
+	});
 }
