@@ -1,0 +1,584 @@
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/utilisables/map.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    opacity: 0.1;
+    filter: alpha(opacity=10);
+}
+
+textarea { resize:vertical; max-height:300px; }
+
+/*.carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto;
+}*/
+
+#starterContainterFluid {
+    position: relative;
+    min-height: 500px;
+}
+
+#starterContainterFluid:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 1;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+#starterContainterFluid:before {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.2;
+    background-image: url("../img/utilisables/ENSG_hall.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.transparent {
+    background: transparent;
+}
+
+.verticallyDispatch span {
+    display: block;
+}
+
+.centerVertically {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px dashed deeppink;
+}
+
+.centerizedParent {
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.centerizedChildren {
+    position: relative;
+}
+
+.verticalCenterizer {
+    display: flex;
+    align-items: center;
+}
+
+#competencesContainterFluid {
+    position: relative;
+    min-height: 500px;
+    background: rgba(50, 255, 18, 0.13);
+    background: -moz-linear-gradient(left, rgba(50, 255, 18, 0.13) 0%, rgba(197, 243, 155, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(50, 255, 18, 0.13)), color-stop(100%, rgba(197, 243, 155, 1)));
+    background: -webkit-linear-gradient(left, rgba(50, 255, 18, 0.13) 0%, rgba(197, 243, 155, 1) 100%);
+    background: -o-linear-gradient(left, rgba(50, 255, 18, 0.13) 0%, rgba(197, 243, 155, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(50, 255, 18, 0.13) 0%, rgba(197, 243, 155, 1) 100%);
+    background: linear-gradient(to right, rgba(50, 255, 18, 0.13) 0%, rgba(197, 243, 155, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#32ff12', endColorstr='#c5f39b', GradientType=1);
+}
+
+#competencesContainterFluid:before {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.5;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+#servicesContainterFluid {
+    position: relative;
+    min-height: 400px;
+    background: rgba(50, 255, 18, 0.13);
+    background: -moz-linear-gradient(left, rgba(50, 255, 18, 0.13) 0%, rgba(197, 243, 155, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(50, 255, 18, 0.13)), color-stop(100%, rgba(197, 243, 155, 1)));
+    background: -webkit-linear-gradient(left, rgba(50, 255, 18, 0.13) 0%, rgba(197, 243, 155, 1) 100%);
+    background: -o-linear-gradient(left, rgba(50, 255, 18, 0.13) 0%, rgba(197, 243, 155, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(50, 255, 18, 0.13) 0%, rgba(197, 243, 155, 1) 100%);
+    background: linear-gradient(to right, rgba(50, 255, 18, 0.13) 0%, rgba(197, 243, 155, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#32ff12', endColorstr='#c5f39b', GradientType=1);
+}
+
+#servicesContainterFluid:before {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.5;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+#partenaireContainterFluid {
+    position: relative;
+    min-height: 400px;
+    background: rgba(50, 255, 18, 0.13);
+    background: -moz-linear-gradient(left, rgba(50, 255, 18, 0.13) 0%, rgba(197, 243, 155, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(50, 255, 18, 0.13)), color-stop(100%, rgba(197, 243, 155, 1)));
+    background: -webkit-linear-gradient(left, rgba(50, 255, 18, 0.13) 0%, rgba(197, 243, 155, 1) 100%);
+    background: -o-linear-gradient(left, rgba(50, 255, 18, 0.13) 0%, rgba(197, 243, 155, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(50, 255, 18, 0.13) 0%, rgba(197, 243, 155, 1) 100%);
+    background: linear-gradient(to right, rgba(50, 255, 18, 0.13) 0%, rgba(197, 243, 155, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#32ff12', endColorstr='#c5f39b', GradientType=1);
+}
+
+#partenaireContainterFluid:before {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.5;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.space {
+    min-height: 10em;
+    /*background-color: red; // TODO Change in production mode*/
+}
+
+.half-space {
+    min-height: 3em;
+    /*background-color: red; // TODO Change in production mode*/
+}
+
+.lobster {
+    font-family: Lobster, monospace;
+}
+
+.tangerine {
+    font-family: Tangerine, monospace;
+}
+
+.fantasy {
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-family: fantasy, monospace;
+}
+
+.monaco {
+    font-weight: 800;
+    font-family: Monaco, monospace;
+}
+
+.monospace {
+    font-family: monospace;
+}
+
+navbar {
+    background: transparent;
+}
+
+html {
+    font-size: 14px;
+}
+
+@include media-breakpoint-up(sm) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    html {
+        font-size: 20px;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    html {
+        font-size: 28px;
+    }
+}
+
+.no-padding-side {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.no-padding {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.no-margin-side {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.no-margin {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.no-margin-vertical {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.parallax-window {
+    min-height: inherit;
+    background: transparent;
+}
+
+.fill {
+    min-height: inherit;
+}
+
+.no-padding-vertical {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.margin-shifted-vertical {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.margin-shifted-side {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.margin-shifted {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.helvetica {
+    font-size: large;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: Helvetica, sans-serif;
+}
+
+.full {
+    width: 100%;
+    height: 100%;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.flex-col {
+    display: flex;
+    display: -webkit-flex;
+    flex: 1;
+    flex-flow: column nowrap;
+}
+
+.flex-row, .flex-row>div[class*='col-'] {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex: 0 auto;
+    height: 100%;
+}
+
+.flex-grow {
+    display: flex;
+    -webkit-flex: 2;
+    flex: 2;
+}
+
+.parent-full {
+    height: 100vh;
+}
+
+.children-full {
+    height: 100vh;
+}
+
+@media (min-width: 992px) {
+    .equal, .equal>div[class*='col-'] {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex: 1 1 auto;
+    }
+}
+
+.invert {
+    filter: invert(0);
+    -webkit-filter: invert(0);
+    -moz-filter: invert(0);
+    -o-filter: invert(0);
+    -ms-filter: invert(0);
+}
+
+.bg-outer {
+    background: linear-gradient(to right, rgba(168, 255, 161, 0.3) 0%, rgba(168, 232, 133, 0.5) 100%);
+}
+
+
+/*.devTools {
+  background-color : rgb(250, 255, 8);
+}*/
+
+#mapid {
+    height: 400px;
+}
+
+@media (max-width: 992px) {
+    #photoParallax{
+      padding-top: 15px;
+      margin-top:15px;
+    }
+
+      .spaceMobile{
+        min-height: 5em;
+      }
+
+    #game_2048Container {
+        max-width: 700px;
+        height: 400px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+  .space {
+      min-height: 5em;
+      /*background-color: red; // TODO Change in production mode*/
+  }
+
+
+  .half-space {
+      min-height: 2em;
+      /*background-color: red; // TODO Change in production mode*/
+  }
+
+
+    #starterContainterFluid{
+          min-height: 200px;
+    }
+
+
+    #game_2048Container {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        height: 400px;
+    }
+    #gameContainer {
+        padding: 0;
+    }
+    #game_2048Container iframe {
+        width: 300px;
+        height: 200px;
+    }
+}
+
+@media (min-width: 992px) {
+    #game_2048Container {
+        max-height: 400px;
+        min-height: 400px;
+        text-align: center;
+        height: 400px;
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        padding-top: 51px;
+    }
+}
+
+
+/*The style definitions for the form-control class come below the style definitions for the bg-danger class in bootstrap.css (or bootstrap.min.css). Because of that, form-control styles override the background-color with white. */
+
+.form-control.bg-danger {
+    background-color: #f2dede;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 1.2em;
+    background: transparent;
+    z-index: 20;
+}
+
+.footer * {
+    color: rgb(46, 138, 134);
+    text-decoration: rgb(46, 138, 134);
+}
+
+#panelMansoryContainer {
+    padding: 10px;
+}
+
+#gridMansoryContainer {
+    width: 100%;
+    border: 2px solid hsla(0, 0%, 0%, 0.7);
+    border-radius: 5px;
+    padding: 10px;
+    background: #f9f9f9;
+}
+
+.gutter-sizer {
+    width: 4%;
+}
+
+/* fluid 5 columns */
+
+.grid {}
+
+.grid-sizer, .grid-item {
+    width: 20%;
+    float: left;
+    border: 2px solid hsla(0, 0%, 0%, 0.2);
+    border-radius: 5px;
+    /*background: #D26;*/
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.grid-item img {
+    width: 100%;
+}
+
+.grid-item--width2 {
+    width: 22%;
+}
+
+.grid-item--width3 {
+    width: 34%;
+}
+
+.grid-item--width4 {
+    width: 46%;
+}
+
+.grid-item--width5 {
+    width: 52%;
+}
+
+.grid-item--width6 {
+    width: 64%;
+}
+
+.jumbotron {
+    position: relative;
+}
+
+.nounderline {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+/* MODIFICATION EN COURS SUR LE SITE INTERNET */
+
+#menu_vertical {
+    width: 47px;
+    position: fixed;
+    background-color: rgba(50, 255, 18, 0.2);
+    margin-top: -550px;
+    height: 1000px;
+}
+.titre{
+    margin-top: 30px;
+    margin-left: 5px;
+}
+
+#texte_abord {
+    margin-left: 47px;
+    position: fixed;
+    background-color: rgba(50, 255, 18, 0.2);
+    margin-top: -530px;
+    padding-top: 10px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
