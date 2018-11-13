@@ -10,7 +10,7 @@
 		$message = htmlspecialchars($request['message']);
 		$human = intval(htmlspecialchars($request['human']));
 
-		$to = 'loic.messal@ensg.eu';
+		$to = 'vertigeo@ensg.eu';
 		$subject = '[Vertigeo] Contact site internet';
 
 
